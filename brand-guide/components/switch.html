@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Switch</title>
+<link rel="stylesheet" href="../_shell.css">
+
+<style>
+.cmp-demo { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cmp-demo--white { background: var(--nk-white); border: 1px solid var(--border); }
+.cmp-demo--col { flex-direction: column; align-items: stretch; }
+.cmp-spec table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
+.cmp-spec th { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 10px; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-subtle); font-weight: 600; }
+.cmp-spec td { padding: 10px 16px 10px 0; border-bottom: 1px solid var(--border); vertical-align: top; }
+.cmp-spec td:first-child { font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted); width: 30%; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid transparent; font-family: inherit; transition: all 120ms var(--ease-out); }
+.btn--primary { background: var(--nk-coral); color: #fff; }
+.btn--secondary { background: var(--nk-black); color: #fff; }
+.btn--ghost { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn--text { background: transparent; color: var(--fg); }
+.btn--sm { padding: 6px 12px; font-size: 13px; }
+.input { width: 100%; padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); font-size: 14px; font-family: inherit; background: #fff; }
+.input:focus { outline: 2px solid var(--nk-coral); outline-offset: 1px; border-color: var(--nk-black); }
+.field { display: grid; gap: 6px; }
+.field label { font-size: 12px; font-weight: 500; color: var(--fg-muted); }
+.field .hint { font-size: 12px; color: var(--fg-subtle); }
+</style>
+</head>
+<body data-page="c-switch">
+<div class="nk-hero">
+  <div class="nk-eyebrow">C11 · Componentes · Switch</div>
+  <div class="nk-hero__rule"></div>
+  <h1 class="nk-h1">Switches <em>ligam coisas.</em></h1>
+  <p class="nk-lede">Para configurações binárias com efeito imediato. Se a ação precisa de "Salvar", use checkbox.</p>
+</div>
+<div class="nk-page">
+
+  <h2 class="nk-h2">Estados</h2>
+  <style>
+  .sw { position: relative; display: inline-block; width: 36px; height: 20px; }
+  .sw input { opacity: 0; width: 0; height: 0; }
+  .sw .track { position: absolute; inset: 0; background: var(--nk-ink-200); border-radius: 999px; transition: 200ms; }
+  .sw .track::before { content: ''; position: absolute; left: 2px; top: 2px; width: 16px; height: 16px; background: #fff; border-radius: 50%; transition: 200ms; box-shadow: 0 1px 2px rgba(0,0,0,0.2); }
+  .sw input:checked + .track { background: var(--nk-coral); }
+  .sw input:checked + .track::before { transform: translateX(16px); }
+  </style>
+  <div class="cmp-demo cmp-demo--col cmp-demo--white">
+    <label style="display:flex; gap: 14px; align-items: center; justify-content: space-between;"><span><strong style="display:block; margin-bottom: 2px;">Notificações por e-mail</strong><span style="font-size: 13px; color: var(--fg-muted);">Receber um resumo diário às 8h.</span></span><span class="sw"><input type="checkbox" checked><span class="track"></span></span></label>
+    <label style="display:flex; gap: 14px; align-items: center; justify-content: space-between;"><span><strong style="display:block; margin-bottom: 2px;">Modo somente leitura</strong><span style="font-size: 13px; color: var(--fg-muted);">A equipe pode visualizar mas não editar.</span></span><span class="sw"><input type="checkbox"><span class="track"></span></span></label>
+    <label style="display:flex; gap: 14px; align-items: center; justify-content: space-between; opacity: 0.5;"><span><strong style="display:block; margin-bottom: 2px;">Sincronização avançada</strong><span style="font-size: 13px; color: var(--fg-muted);">Disponível no plano Estúdio.</span></span><span class="sw"><input type="checkbox" disabled><span class="track"></span></span></label>
+  </div>
+  
+  <div class="nk-footer">
+    <a href="checkbox.html">← C10 · Checkbox</a>
+    <a href="avatar.html">C12 · Avatar →</a>
+  </div>
+</div>
+<script src="../_layout.js"></script>
+</body>
+</html>

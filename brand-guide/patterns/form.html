@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Form</title><link rel="stylesheet" href="../_shell.css">
+<style>
+.cmp-demo { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cmp-demo--white { background: var(--nk-white); border: 1px solid var(--border); }
+.cmp-demo--col { flex-direction: column; align-items: stretch; }
+.cmp-demo--p0 { padding: 0; overflow: hidden; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid transparent; font-family: inherit; }
+.btn--primary { background: var(--nk-coral); color: #fff; }
+.btn--ghost { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn--sm { padding: 6px 12px; font-size: 13px; }
+.tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: var(--r-pill); font-size: 12px; font-weight: 500; background: var(--nk-gray-light); color: var(--fg); }
+</style></head>
+<body data-page="p-form">
+<div class="nk-hero"><div class="nk-eyebrow">P3 · Padrões · Form</div><div class="nk-hero__rule"></div><h1 class="nk-h1">Forms.</h1><p class="nk-lede">Uma coluna, label acima do input, ações alinhadas à direita. Erros inline; nunca em modal.</p></div>
+<div class="nk-page"><h2 class="nk-h2">Formulário curto</h2>
+<div class="cmp-demo cmp-demo--white cmp-demo--col" style="max-width: 560px;">
+  <div><label style="font-size: 12px; color: var(--fg-muted); display: block; margin-bottom: 6px; font-weight: 500;">Nome do projeto</label><input style="width: 100%; padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); font-family: inherit; font-size: 14px;" value="Casa do Lago"></div>
+  <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 14px;">
+    <div><label style="font-size: 12px; color: var(--fg-muted); display: block; margin-bottom: 6px; font-weight: 500;">Tipo</label><select style="width: 100%; padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); font-family: inherit; font-size: 14px;"><option>Residencial</option></select></div>
+    <div><label style="font-size: 12px; color: var(--fg-muted); display: block; margin-bottom: 6px; font-weight: 500;">Etapa</label><select style="width: 100%; padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); font-family: inherit; font-size: 14px;"><option>Anteprojeto</option></select></div>
+  </div>
+  <div><label style="font-size: 12px; color: var(--fg-muted); display: block; margin-bottom: 6px; font-weight: 500;">Honorários</label><div style="display:flex; align-items: stretch; border: 1px solid var(--border-strong); border-radius: var(--r-md); overflow: hidden;"><span style="padding: 10px 12px; background: var(--bg-alt); color: var(--fg-muted); font-size: 14px;">R$</span><input style="border: none; padding: 10px 14px; flex: 1; outline: none; font-family: inherit; font-size: 14px;" value="142.000,00"></div></div>
+  <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 8px; padding-top: 16px; border-top: 1px solid var(--border);">
+    <a style="font-size: 13px; color: var(--fg-muted);">Cancelar</a>
+    <div style="display:flex; gap:8px;"><button class="btn btn--ghost btn--sm">Salvar rascunho</button><button class="btn btn--primary btn--sm">Criar projeto</button></div>
+  </div>
+</div>
+<h2 class="nk-h2">Form com seções</h2>
+<div class="cmp-demo cmp-demo--white cmp-demo--col" style="max-width: 720px; align-items: stretch;">
+  <div style="display: grid; grid-template-columns: 200px 1fr; gap: 32px; padding-bottom: 24px; border-bottom: 1px solid var(--border);">
+    <div><h4 style="margin: 0; font-size: 14px;">Identificação</h4><p style="margin: 4px 0 0; font-size: 12px; color: var(--fg-muted); line-height: 1.5;">Como o projeto aparece para sua equipe.</p></div>
+    <div style="display: grid; gap: 12px;"><input style="padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); font-family: inherit;" value="Casa do Lago" placeholder="Nome"><input style="padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); font-family: inherit;" placeholder="Cliente"></div>
+  </div>
+  <div style="display: grid; grid-template-columns: 200px 1fr; gap: 32px; padding-top: 24px;">
+    <div><h4 style="margin: 0; font-size: 14px;">Cronograma</h4><p style="margin: 4px 0 0; font-size: 12px; color: var(--fg-muted); line-height: 1.5;">Datas-chave e marcos do projeto.</p></div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 12px;"><input style="padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); font-family: inherit;" placeholder="Início" value="01/03/2025"><input style="padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); font-family: inherit;" placeholder="Entrega" value="12/11/2025"></div>
+  </div>
+</div><div class="nk-footer"><a href="palettes.html">← P2 · Paletas</a><a href="search.html">P4 · Search →</a></div></div>
+<script src="../_layout.js"></script></body></html>

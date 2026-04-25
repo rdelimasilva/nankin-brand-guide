@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Brand Guide</title>
+<link rel="stylesheet" href="_shell.css">
+<style>
+  .home-hero { padding: 96px 64px 72px; border-bottom: 1px solid var(--border); }
+  .home-hero .nk-eyebrow { color: var(--fg-subtle); }
+  .home-hero h1 { font-family: var(--font-display); font-size: 96px; font-weight: 400; letter-spacing: -0.03em; line-height: 0.98; margin: 18px 0 28px; }
+  .home-hero h1 em { color: var(--nk-coral); }
+  .home-hero .lede { font-size: 22px; line-height: 1.45; color: var(--fg-muted); max-width: 60ch; margin: 0; }
+  .home-hero .meta { display: flex; gap: 32px; flex-wrap: wrap; font-size: 11px; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-subtle); margin-top: 56px; padding-top: 28px; border-top: 1px solid var(--border); }
+  .home-hero .meta strong { color: var(--fg); font-weight: 600; }
+
+  .home-section { padding: 72px 64px; border-bottom: 1px solid var(--border); }
+  .home-section h2 { font-family: var(--font-display); font-size: 36px; letter-spacing: -0.02em; margin: 0 0 8px; }
+  .home-section h2 em { color: var(--nk-coral); }
+  .home-section .desc { font-size: 15px; color: var(--fg-muted); margin: 0 0 32px; max-width: 60ch; line-height: 1.55; }
+
+  .home-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
+  .home-grid--2 { grid-template-columns: repeat(2, 1fr); }
+  .home-grid--4 { grid-template-columns: repeat(4, 1fr); }
+  .home-card { background: var(--nk-white); border: 1px solid var(--border); border-radius: var(--r-md); padding: 22px; text-decoration: none; color: inherit; display: flex; flex-direction: column; gap: 8px; min-height: 140px; transition: all 160ms var(--ease-out); }
+  .home-card:hover { border-color: var(--nk-black); transform: translateY(-1px); box-shadow: var(--shadow-2); }
+  .home-card .tag { font-size: 10px; font-weight: 600; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-subtle); }
+  .home-card .ttl { font-family: var(--font-display); font-size: 20px; letter-spacing: -0.015em; margin: 4px 0 0; }
+  .home-card .desc-sm { font-size: 13px; color: var(--fg-muted); line-height: 1.5; margin: 0; flex: 1; }
+  .home-card .arrow { font-size: 16px; color: var(--fg-subtle); align-self: flex-end; }
+
+  .stats { background: var(--nk-black); color: #fff; padding: 64px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 32px; }
+  .stat__num { font-family: var(--font-display); font-size: 64px; font-weight: 400; line-height: 1; letter-spacing: -0.02em; color: var(--nk-coral); margin: 0 0 8px; }
+  .stat__lbl { font-size: 13px; line-height: 1.5; color: rgba(255,255,255,0.7); }
+
+  .compact-list { display: grid; gap: 6px; }
+  .compact-list a { display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; background: var(--nk-white); border: 1px solid var(--border); border-radius: var(--r-md); text-decoration: none; color: var(--fg); font-size: 14px; transition: 120ms var(--ease-out); }
+  .compact-list a:hover { border-color: var(--nk-black); background: var(--bg-alt); }
+  .compact-list a span { color: var(--fg-subtle); font-size: 12px; font-family: var(--font-mono); }
+</style>
+</head>
+<body data-page="index">
+
+<section class="home-hero">
+  <div class="nk-eyebrow">Brand Guide · v3.0</div>
+  <h1>O estúdio inteiro,<br><em>num lugar só.</em></h1>
+  <p class="lede">O sistema completo da Nankin — estratégia, marca, fundações, componentes, padrões e aplicações. Tudo o que um time precisa para construir, escrever e apresentar a marca com coerência.</p>
+  <div class="meta">
+    <span>Versão · <strong>3.0</strong></span>
+    <span>Atualizado · <strong>Abr 2026</strong></span>
+    <span>Páginas · <strong>54</strong></span>
+    <span>Mantido por · <strong>Studio Nankin</strong></span>
+  </div>
+</section>
+
+<section class="home-section">
+  <h2>Comece <em>por aqui.</em></h2>
+  <p class="desc">Quatro entradas para os blocos mais usados. Se está chegando agora, comece pela estratégia — ela explica por que o resto é como é.</p>
+  <div class="home-grid home-grid--4">
+    <a class="home-card" href="strategy/essence.html"><span class="tag">Estratégia · S1</span><div class="ttl">A essência</div><p class="desc-sm">A frase-mãe da marca, e as três promessas que dela se desdobram.</p><span class="arrow">→</span></a>
+    <a class="home-card" href="brand/logos.html"><span class="tag">Marca · B2</span><div class="ttl">Logos</div><p class="desc-sm">Wordmark, ponto, versões oficiais e o que nunca fazer.</p><span class="arrow">→</span></a>
+    <a class="home-card" href="components/button.html"><span class="tag">Componentes · C1</span><div class="ttl">Componentes</div><p class="desc-sm">21 peças prontas — variações, estados, especificação, "não faça".</p><span class="arrow">→</span></a>
+    <a class="home-card" href="applications/dashboard.html"><span class="tag">Aplicações · A1</span><div class="ttl">Em uso</div><p class="desc-sm">Dashboard, site, deck — a marca aplicada em contexto real.</p><span class="arrow">→</span></a>
+  </div>
+</section>
+
+<section class="stats">
+  <div><div class="stat__num">21</div><div class="stat__lbl">Componentes documentados, com variações, estados e especificação.</div></div>
+  <div><div class="stat__num">7</div><div class="stat__lbl">Padrões de composição reutilizáveis para o produto e o site.</div></div>
+  <div><div class="stat__num">8</div><div class="stat__lbl">Atos narrativos no deck-mãe, em 25 slides totais.</div></div>
+  <div><div class="stat__num">3</div><div class="stat__lbl">Tipografias: Plus Jakarta no UI, TS Qamus no editorial, Nobel Uno no wordmark.</div></div>
+</section>
+
+<section class="home-section">
+  <h2>Os <em>oito blocos.</em></h2>
+  <p class="desc">O sistema é organizado em sete blocos de conteúdo, do mais conceitual ao mais operacional. Cada bloco tem uma página-hub e suas páginas internas.</p>
+  <div class="home-grid">
+    <a class="home-card" href="strategy.html"><span class="tag">S · Estratégia</span><div class="ttl">A marca antes do pixel.</div><p class="desc-sm">Essência, missão, atributos, tom de voz, frases, redes.</p><span class="arrow">6 páginas</span></a>
+    <a class="home-card" href="brand.html"><span class="tag">B · Marca</span><div class="ttl">A identidade visual.</div><p class="desc-sm">Arquitetura, logos, cores, tipografia, regras de aplicação.</p><span class="arrow">5 páginas</span></a>
+    <a class="home-card" href="foundations.html"><span class="tag">F · Fundações</span><div class="ttl">As decisões pequenas.</div><p class="desc-sm">Spacing, tipo, grid, ritmo, raios, elevação, motion, ícones.</p><span class="arrow">8 páginas</span></a>
+    <a class="home-card" href="components.html" onclick="event.preventDefault(); location.href='components/button.html';"><span class="tag">C · Componentes</span><div class="ttl">As peças do UI.</div><p class="desc-sm">21 componentes da plataforma Nankin, do botão ao separator.</p><span class="arrow">21 páginas</span></a>
+    <a class="home-card" href="patterns.html"><span class="tag">P · Padrões</span><div class="ttl">As receitas.</div><p class="desc-sm">Composições prontas que combinam vários componentes.</p><span class="arrow">7 páginas</span></a>
+    <a class="home-card" href="applications.html"><span class="tag">A · Aplicações</span><div class="ttl">A marca em uso.</div><p class="desc-sm">Dashboard do produto, site institucional, deck de pitch.</p><span class="arrow">3 páginas</span></a>
+    <a class="home-card" href="strategy.html" style="background: var(--nk-black); color: #fff; border-color: var(--nk-black);"><span class="tag" style="color: rgba(255,255,255,0.6);">Atalho</span><div class="ttl" style="color: #fff;">Tom de voz</div><p class="desc-sm" style="color: rgba(255,255,255,0.7);">Cinco regras curtas, com o que fazer e o que evitar.</p><span class="arrow" style="color: rgba(255,255,255,0.5);">→ S4</span></a>
+    <a class="home-card" href="resources.html"><span class="tag">R · Recursos</span><div class="ttl">Os utilitários.</div><p class="desc-sm">Downloads, FAQ, histórico de versões e contato.</p><span class="arrow">4 páginas</span></a>
+  </div>
+</section>
+
+<section class="home-section">
+  <h2>Atalhos <em>rápidos.</em></h2>
+  <p class="desc">As páginas mais consultadas no dia a dia, quando alguém precisa lembrar de uma especificação rápida.</p>
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 24px;">
+    <div>
+      <div class="nk-eyebrow" style="margin-bottom: 12px;">Cores & tipo</div>
+      <div class="compact-list">
+        <a href="brand/color.html">Paleta oficial<span>5 cores</span></a>
+        <a href="brand/typography.html">Tipografia<span>3 famílias</span></a>
+        <a href="foundations/type-scale.html">Type scale<span>F2</span></a>
+      </div>
+    </div>
+    <div>
+      <div class="nk-eyebrow" style="margin-bottom: 12px;">Mais usados</div>
+      <div class="compact-list">
+        <a href="components/button.html">Button<span>C1</span></a>
+        <a href="components/card.html">Card<span>C2</span></a>
+        <a href="components/table.html">Table<span>C8</span></a>
+        <a href="patterns/form.html">Form<span>P3</span></a>
+      </div>
+    </div>
+    <div>
+      <div class="nk-eyebrow" style="margin-bottom: 12px;">Recursos</div>
+      <div class="compact-list">
+        <a href="resources/downloads.html">Downloads<span>R1</span></a>
+        <a href="resources/faq.html">FAQ<span>R2</span></a>
+        <a href="resources/changelog.html">Histórico<span>R3</span></a>
+        <a href="resources/contact.html">Contato<span>R4</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section style="padding: 80px 64px; text-align: center; background: var(--bg);">
+  <div style="font-family: var(--font-wordmark); font-size: 56px; letter-spacing: -0.02em; line-height: 1;">nankin.</div>
+  <p style="margin: 18px 0 0; font-size: 14px; color: var(--fg-muted); max-width: 50ch; margin-left: auto; margin-right: auto; line-height: 1.6;">Brand Guide v3.0 · publicado em abril de 2026 · escrito e mantido pelo time de Marca, Produto e Design da Nankin.</p>
+</section>
+
+<script src="_layout.js"></script>
+</body>
+</html>

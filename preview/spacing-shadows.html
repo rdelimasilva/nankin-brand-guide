@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Nankin · Shadows</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 36px 32px; background: var(--bg); display: flex; gap: 28px; align-items: center; }
+  .card { width: 110px; height: 78px; background: var(--bg-alt); border-radius: var(--r-md); border: 1px solid var(--border); display: flex; align-items: flex-end; justify-content: center; padding-bottom: 8px; }
+  .card.coral { background: var(--nk-coral); border: none; }
+  .meta { font-family: var(--font-text); font-size: 11px; letter-spacing: 0.04em; color: var(--fg-muted); }
+  .item { display: flex; flex-direction: column; align-items: center; gap: 10px; }
+</style>
+</head>
+<body>
+  <div class="item"><div class="card" style="box-shadow: var(--shadow-1);"><span class="meta">shadow-1</span></div></div>
+  <div class="item"><div class="card" style="box-shadow: var(--shadow-2);"><span class="meta">shadow-2</span></div></div>
+  <div class="item"><div class="card" style="box-shadow: var(--shadow-3);"><span class="meta">shadow-3</span></div></div>
+  <div class="item"><div class="card coral" style="box-shadow: var(--shadow-coral);"><span class="meta" style="color: var(--nk-black);">coral</span></div></div>
+</body>
+</html>

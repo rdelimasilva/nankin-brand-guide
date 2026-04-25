@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Input</title>
+<link rel="stylesheet" href="../_shell.css">
+
+<style>
+.cmp-demo { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cmp-demo--white { background: var(--nk-white); border: 1px solid var(--border); }
+.cmp-demo--col { flex-direction: column; align-items: stretch; }
+.cmp-spec table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
+.cmp-spec th { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 10px; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-subtle); font-weight: 600; }
+.cmp-spec td { padding: 10px 16px 10px 0; border-bottom: 1px solid var(--border); vertical-align: top; }
+.cmp-spec td:first-child { font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted); width: 30%; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid transparent; font-family: inherit; transition: all 120ms var(--ease-out); }
+.btn--primary { background: var(--nk-coral); color: #fff; }
+.btn--secondary { background: var(--nk-black); color: #fff; }
+.btn--ghost { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn--text { background: transparent; color: var(--fg); }
+.btn--sm { padding: 6px 12px; font-size: 13px; }
+.input { width: 100%; padding: 10px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); font-size: 14px; font-family: inherit; background: #fff; }
+.input:focus { outline: 2px solid var(--nk-coral); outline-offset: 1px; border-color: var(--nk-black); }
+.field { display: grid; gap: 6px; }
+.field label { font-size: 12px; font-weight: 500; color: var(--fg-muted); }
+.field .hint { font-size: 12px; color: var(--fg-subtle); }
+</style>
+</head>
+<body data-page="c-input">
+<div class="nk-hero">
+  <div class="nk-eyebrow">C9 · Componentes · Input</div>
+  <div class="nk-hero__rule"></div>
+  <h1 class="nk-h1">Inputs <em>são silenciosos.</em></h1>
+  <p class="nk-lede">Borda fina, foco coral. Label sempre visível. Placeholder não substitui label.</p>
+</div>
+<div class="nk-page">
+
+  <h2 class="nk-h2">Estados</h2>
+  <div class="cmp-demo cmp-demo--col cmp-demo--white" style="max-width: 480px;">
+    <div class="field"><label>Padrão</label><input class="input" placeholder="Nome do projeto"></div>
+    <div class="field"><label>Preenchido</label><input class="input" value="Casa do Lago"></div>
+    <div class="field"><label>Foco</label><input class="input" value="Casa do Lago" style="outline: 2px solid var(--nk-coral); outline-offset: 1px; border-color: var(--nk-black);"></div>
+    <div class="field"><label>Erro</label><input class="input" value="Casa do Lago" style="border-color: var(--nk-error);"><span class="hint" style="color: var(--nk-error);">Já existe um projeto com este nome.</span></div>
+    <div class="field"><label>Desabilitado</label><input class="input" value="Casa do Lago" disabled style="background: var(--bg-alt); cursor: not-allowed;"></div>
+  </div>
+
+  <h2 class="nk-h2">Variações</h2>
+  <div class="cmp-demo cmp-demo--col cmp-demo--white" style="max-width: 480px;">
+    <div class="field"><label>Com prefixo</label><div style="display:flex; align-items: stretch; border: 1px solid var(--border-strong); border-radius: var(--r-md); overflow: hidden;"><span style="padding: 10px 12px; background: var(--bg-alt); color: var(--fg-muted); font-size: 14px;">R$</span><input style="border: none; padding: 10px 14px; flex: 1; outline: none; font-family: inherit; font-size: 14px;" value="142.000,00"></div></div>
+    <div class="field"><label>Textarea</label><textarea class="input" rows="3" style="font-family: inherit;">Anteprojeto residencial unifamiliar de 380m², com piscina e área externa.</textarea></div>
+    <div class="field"><label>Select</label><select class="input"><option>Residencial</option><option>Comercial</option><option>Institucional</option></select></div>
+  </div>
+  
+  <div class="nk-footer">
+    <a href="table.html">← C8 · Table</a>
+    <a href="checkbox.html">C10 · Checkbox →</a>
+  </div>
+</div>
+<script src="../_layout.js"></script>
+</body>
+</html>

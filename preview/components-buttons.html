@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Nankin · Botões</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 28px 32px; background: var(--bg); display: flex; flex-direction: column; gap: 14px; }
+  .row { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .btn { font-family: var(--font-text); font-weight: 600; font-size: 14px; letter-spacing: 0; padding: 12px 22px; border-radius: var(--r-pill); border: none; cursor: pointer; transition: all var(--dur-2) var(--ease-out); display: inline-flex; align-items: center; gap: 8px; }
+  .btn.primary { background: var(--nk-coral); color: var(--nk-white); }
+  .btn.primary:hover { background: var(--nk-coral-deep); }
+  .btn.dark { background: var(--nk-black); color: var(--nk-white); }
+  .btn.ghost { background: transparent; color: var(--fg); border: 1px solid var(--border-strong); font-weight: 500; }
+  .btn.ghost:hover { background: var(--nk-black); color: var(--nk-white); border-color: var(--nk-black); }
+  .btn.sm { padding: 8px 14px; font-size: 13px; }
+  .btn .arrow { display: inline-block; transition: transform var(--dur-2) var(--ease-out); }
+  .btn:hover .arrow { transform: translateX(3px); }
+  .meta { font-family: var(--font-text); font-size: 10px; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-muted); min-width: 90px; }
+</style>
+</head>
+<body>
+  <div class="row"><span class="meta">primary</span>
+    <button class="btn primary">Comece grátis <span class="arrow">→</span></button>
+    <button class="btn primary sm">Saiba mais</button>
+  </div>
+  <div class="row"><span class="meta">dark</span>
+    <button class="btn dark">Ver demonstração <span class="arrow">→</span></button>
+    <button class="btn dark sm">Entrar</button>
+  </div>
+  <div class="row"><span class="meta">ghost</span>
+    <button class="btn ghost">Falar com vendas</button>
+    <button class="btn ghost sm">Cancelar</button>
+  </div>
+</body>
+</html>

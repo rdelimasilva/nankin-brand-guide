@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Nankin · Tags & badges</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 26px 32px; background: var(--bg); display: flex; flex-direction: column; gap: 14px; }
+  .row { display: flex; gap: 8px; flex-wrap: wrap; align-items: center; }
+  .tag { font-family: var(--font-text); font-size: 12px; font-weight: 500; letter-spacing: 0.02em; padding: 6px 12px; border-radius: var(--r-pill); border: 1px solid var(--border-strong); color: var(--fg); background: transparent; }
+  .tag.solid { background: var(--nk-black); color: var(--nk-white); border-color: var(--nk-black); }
+  .tag.coral { background: var(--nk-coral); color: var(--nk-white); border-color: var(--nk-coral); }
+  .tag.soft  { background: var(--nk-coral-soft); color: var(--nk-coral-deep); border-color: transparent; }
+  .badge { font-family: var(--font-text); font-size: 11px; font-weight: 500; padding: 3px 8px; border-radius: var(--r-sm); }
+  .badge.success { background: color-mix(in oklab, var(--nk-success) 18%, transparent); color: var(--nk-success); }
+  .badge.warn    { background: color-mix(in oklab, var(--nk-warn) 18%, transparent); color: var(--nk-warn); }
+  .badge.error   { background: color-mix(in oklab, var(--nk-error) 18%, transparent); color: var(--nk-error); }
+  .meta { font-family: var(--font-text); font-size: 10px; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-muted); min-width: 80px; }
+</style>
+</head>
+<body>
+  <div class="row"><span class="meta">tags</span>
+    <span class="tag">Anteprojeto</span>
+    <span class="tag">Em andamento</span>
+    <span class="tag">Revisão</span>
+    <span class="tag solid">Em obra</span>
+    <span class="tag coral">Urgente</span>
+    <span class="tag soft">2025</span>
+  </div>
+  <div class="row"><span class="meta">badges</span>
+    <span class="badge success">No prazo</span>
+    <span class="badge warn">Atenção</span>
+    <span class="badge error">Atrasado</span>
+  </div>
+</body>
+</html>

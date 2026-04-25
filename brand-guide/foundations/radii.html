@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Radii</title>
+<link rel="stylesheet" href="../_shell.css">
+
+</head>
+<body data-page="f-radii">
+
+<div class="nk-hero">
+  <div class="nk-eyebrow">F3 · Fundações · Radii</div>
+  <div class="nk-hero__rule"></div>
+  <h1 class="nk-h1">Geométrico, <em>sem flourish.</em></h1>
+  <p class="nk-lede">Raios pequenos para UI, médios para cards, pill para tags. Sem cantos arredondados decorativos.</p>
+</div>
+
+<div class="nk-page">
+
+  <div class="nk-grid nk-grid--3" style="margin-top: 16px;">
+    
+      <div class="nk-card">
+        <div style="height: 80px; background: var(--nk-black); border-radius: 0px; margin-bottom: 16px;"></div>
+        <div class="nk-eyebrow">--r-0</div>
+        <p style="font-family: var(--font-mono); font-size: 12px; margin: 8px 0 0;">0px</p>
+        <p style="font-size: 13px; color: var(--fg-muted); margin: 8px 0 0;">Bordas vivas. Listras, divisórias.</p>
+      </div>
+    
+      <div class="nk-card">
+        <div style="height: 80px; background: var(--nk-black); border-radius: 4px; margin-bottom: 16px;"></div>
+        <div class="nk-eyebrow">--r-sm</div>
+        <p style="font-family: var(--font-mono); font-size: 12px; margin: 8px 0 0;">4px</p>
+        <p style="font-size: 13px; color: var(--fg-muted); margin: 8px 0 0;">Inputs, tags, badges.</p>
+      </div>
+    
+      <div class="nk-card">
+        <div style="height: 80px; background: var(--nk-black); border-radius: 8px; margin-bottom: 16px;"></div>
+        <div class="nk-eyebrow">--r-md</div>
+        <p style="font-family: var(--font-mono); font-size: 12px; margin: 8px 0 0;">8px</p>
+        <p style="font-size: 13px; color: var(--fg-muted); margin: 8px 0 0;">Botões, cards, alerts.</p>
+      </div>
+    
+      <div class="nk-card">
+        <div style="height: 80px; background: var(--nk-black); border-radius: 12px; margin-bottom: 16px;"></div>
+        <div class="nk-eyebrow">--r-lg</div>
+        <p style="font-family: var(--font-mono); font-size: 12px; margin: 8px 0 0;">12px</p>
+        <p style="font-size: 13px; color: var(--fg-muted); margin: 8px 0 0;">Modais, popovers.</p>
+      </div>
+    
+      <div class="nk-card">
+        <div style="height: 80px; background: var(--nk-black); border-radius: 20px; margin-bottom: 16px;"></div>
+        <div class="nk-eyebrow">--r-xl</div>
+        <p style="font-family: var(--font-mono); font-size: 12px; margin: 8px 0 0;">20px</p>
+        <p style="font-size: 13px; color: var(--fg-muted); margin: 8px 0 0;">Hero cards editoriais.</p>
+      </div>
+    
+      <div class="nk-card">
+        <div style="height: 80px; background: var(--nk-black); border-radius: 999px; margin-bottom: 16px;"></div>
+        <div class="nk-eyebrow">--r-pill</div>
+        <p style="font-family: var(--font-mono); font-size: 12px; margin: 8px 0 0;">999px</p>
+        <p style="font-size: 13px; color: var(--fg-muted); margin: 8px 0 0;">Avatar, switch, pill button.</p>
+      </div>
+    
+  </div>
+
+  <h2 class="nk-h2">Não faça</h2>
+  <ul class="nk-body">
+    <li>Não misture raios diferentes em elementos vizinhos. Card com r-md → input com r-md, não r-sm.</li>
+    <li>Não use border-radius assimétrico ("4px 12px 4px 12px"). Sempre uniforme.</li>
+    <li>Avatar é sempre pill (--r-pill). Foto de perfil é sempre redonda — não há exceção.</li>
+  </ul>
+    
+
+  <div class="nk-footer">
+    <a href="vertical-rhythm.html">← Vertical rhythm</a>
+    <a href="elevation.html">Elevation →</a>
+  </div>
+</div>
+
+<script src="../_layout.js"></script>
+</body>
+</html>

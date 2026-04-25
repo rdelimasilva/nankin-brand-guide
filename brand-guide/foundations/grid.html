@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Grid</title>
+<link rel="stylesheet" href="../_shell.css">
+
+</head>
+<body data-page="f-grid">
+
+<div class="nk-hero">
+  <div class="nk-eyebrow">F3 · Fundações · Grid</div>
+  <div class="nk-hero__rule"></div>
+  <h1 class="nk-h1">12 colunas. <em>Gutter 24.</em></h1>
+  <p class="nk-lede">Grid responsivo simples. 12 colunas no desktop, 6 no tablet, 4 no mobile. Margem maior em cima de margem menor.</p>
+</div>
+
+<div class="nk-page">
+
+  <h2 class="nk-h2">Breakpoints</h2>
+  <div style="display:grid; gap:8px; margin-top: 16px;">
+    
+      <div style="display:grid; grid-template-columns: 100px 140px 1fr 80px 80px; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border); align-items: center;">
+        <strong style="font-size:14px;">Mobile</strong>
+        <span style="font-family: var(--font-mono); font-size:12px; color: var(--fg-muted);">< 640px</span>
+        <span style="font-size:14px; color: var(--fg-muted);">4 col</span>
+        <span style="font-family: var(--font-mono); font-size:12px;">gut 16</span>
+        <span style="font-family: var(--font-mono); font-size:12px;">mar 16</span>
+      </div>
+    
+      <div style="display:grid; grid-template-columns: 100px 140px 1fr 80px 80px; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border); align-items: center;">
+        <strong style="font-size:14px;">Tablet</strong>
+        <span style="font-family: var(--font-mono); font-size:12px; color: var(--fg-muted);">640 – 1024px</span>
+        <span style="font-size:14px; color: var(--fg-muted);">6 col</span>
+        <span style="font-family: var(--font-mono); font-size:12px;">gut 24</span>
+        <span style="font-family: var(--font-mono); font-size:12px;">mar 32</span>
+      </div>
+    
+      <div style="display:grid; grid-template-columns: 100px 140px 1fr 80px 80px; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border); align-items: center;">
+        <strong style="font-size:14px;">Desktop</strong>
+        <span style="font-family: var(--font-mono); font-size:12px; color: var(--fg-muted);">1024 – 1440px</span>
+        <span style="font-size:14px; color: var(--fg-muted);">12 col</span>
+        <span style="font-family: var(--font-mono); font-size:12px;">gut 24</span>
+        <span style="font-family: var(--font-mono); font-size:12px;">mar 64</span>
+      </div>
+    
+      <div style="display:grid; grid-template-columns: 100px 140px 1fr 80px 80px; gap: 16px; padding: 12px 0; border-bottom: 1px solid var(--border); align-items: center;">
+        <strong style="font-size:14px;">Wide</strong>
+        <span style="font-family: var(--font-mono); font-size:12px; color: var(--fg-muted);">> 1440px</span>
+        <span style="font-size:14px; color: var(--fg-muted);">12 col</span>
+        <span style="font-family: var(--font-mono); font-size:12px;">gut 32</span>
+        <span style="font-family: var(--font-mono); font-size:12px;">mar 96</span>
+      </div>
+    
+  </div>
+
+  <h2 class="nk-h2">Visualização · 12 colunas</h2>
+  <div style="margin-top: 16px; padding: 24px; background: var(--bg-alt); border-radius: var(--r-md);">
+    <div style="display:grid; grid-template-columns: repeat(12, 1fr); gap: 12px;">
+      <div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">1</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">2</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">3</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">4</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">5</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">6</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">7</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">8</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">9</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">10</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">11</div><div style="height:120px; background: rgba(254,110,96,0.18); border: 1px solid var(--nk-coral); border-radius: 4px; display:flex; align-items:flex-end; padding:8px; font-family:var(--font-mono); font-size:10px; color: var(--nk-coral-deep);">12</div>
+    </div>
+  </div>
+
+  <h2 class="nk-h2">Composições típicas</h2>
+  <div style="display:grid; gap: 14px; margin-top: 16px;">
+    <div class="nk-card" style="padding: 16px;">
+      <div class="nk-eyebrow" style="margin-bottom:12px;">Hero · 8 + 4</div>
+      <div style="display:grid; grid-template-columns: 8fr 4fr; gap: 12px;">
+        <div style="height: 80px; background: var(--nk-coral); border-radius: 4px;"></div>
+        <div style="height: 80px; background: var(--nk-black); border-radius: 4px;"></div>
+      </div>
+    </div>
+    <div class="nk-card" style="padding: 16px;">
+      <div class="nk-eyebrow" style="margin-bottom:12px;">Lista · 4 + 4 + 4</div>
+      <div style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 12px;">
+        <div style="height: 80px; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 4px;"></div>
+        <div style="height: 80px; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 4px;"></div>
+        <div style="height: 80px; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 4px;"></div>
+      </div>
+    </div>
+    <div class="nk-card" style="padding: 16px;">
+      <div class="nk-eyebrow" style="margin-bottom:12px;">Sidebar + content · 3 + 9</div>
+      <div style="display:grid; grid-template-columns: 3fr 9fr; gap: 12px;">
+        <div style="height: 80px; background: var(--nk-black); border-radius: 4px;"></div>
+        <div style="height: 80px; background: var(--bg-alt); border: 1px solid var(--border); border-radius: 4px;"></div>
+      </div>
+    </div>
+  </div>
+    
+
+  <div class="nk-footer">
+    <a href="type-scale.html">← Type scale</a>
+    <a href="vertical-rhythm.html">Vertical rhythm →</a>
+  </div>
+</div>
+
+<script src="../_layout.js"></script>
+</body>
+</html>

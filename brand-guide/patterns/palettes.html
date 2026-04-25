@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Paletas</title><link rel="stylesheet" href="../_shell.css">
+<style>
+.cmp-demo { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cmp-demo--white { background: var(--nk-white); border: 1px solid var(--border); }
+.cmp-demo--col { flex-direction: column; align-items: stretch; }
+.cmp-demo--p0 { padding: 0; overflow: hidden; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid transparent; font-family: inherit; }
+.btn--primary { background: var(--nk-coral); color: #fff; }
+.btn--ghost { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn--sm { padding: 6px 12px; font-size: 13px; }
+.tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: var(--r-pill); font-size: 12px; font-weight: 500; background: var(--nk-gray-light); color: var(--fg); }
+</style></head>
+<body data-page="p-palettes">
+<div class="nk-hero"><div class="nk-eyebrow">P2 · Padrões · Paletas</div><div class="nk-hero__rule"></div><h1 class="nk-h1">Paletas <em>de página.</em></h1><p class="nk-lede">Combinações pré-aprovadas para seções inteiras. Garante consistência sem decidir cor a cor.</p></div>
+<div class="nk-page"><h2 class="nk-h2">A · Papel</h2>
+<div class="cmp-demo cmp-demo--p0" style="display:block; background: var(--bg);">
+  <div style="padding: 48px;"><div class="nk-eyebrow">Padrão · 90% das telas</div><h3 style="margin: 8px 0 0; font-size: 28px; font-family: var(--font-display);">Texto preto sobre papel.</h3><p style="margin: 12px 0 0; color: var(--fg-muted); max-width: 50ch;">Bege #F4EFE6, tinta #1A1A1A, coral só em ações primárias.</p><div style="margin-top: 18px; display: flex; gap: 8px;"><button class="btn btn--primary btn--sm">Ação coral</button><button class="btn btn--ghost btn--sm">Secundária</button></div></div>
+</div>
+<h2 class="nk-h2">B · Carvão</h2>
+<div class="cmp-demo cmp-demo--p0" style="display:block; background: var(--nk-black);">
+  <div style="padding: 48px; color: #fff;"><div class="nk-eyebrow" style="color: rgba(255,255,255,0.5);">Inverso · seções de impacto</div><h3 style="margin: 8px 0 0; font-size: 28px; font-family: var(--font-display);">Tinta sobre papel invertido.</h3><p style="margin: 12px 0 0; color: rgba(255,255,255,0.65); max-width: 50ch;">Para hero, encerramento, citações longas.</p><div style="margin-top: 18px;"><button class="btn btn--primary btn--sm">Ação coral</button></div></div>
+</div>
+<h2 class="nk-h2">C · Coral pleno</h2>
+<div class="cmp-demo cmp-demo--p0" style="display:block; background: var(--nk-coral);">
+  <div style="padding: 48px; color: #fff;"><div class="nk-eyebrow" style="color: rgba(255,255,255,0.7);">Marca · use 1× por documento</div><h3 style="margin: 8px 0 0; font-size: 28px; font-family: var(--font-display);">Quando precisa parar o olho.</h3><p style="margin: 12px 0 0; color: rgba(255,255,255,0.85); max-width: 50ch;">Capa, pull-quote, separador editorial.</p></div>
+</div><div class="nk-footer"><a href="sticky-banner.html">← P1 · Sticky Banner</a><a href="form.html">P3 · Form →</a></div></div>
+<script src="../_layout.js"></script></body></html>

@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Motion</title>
+<link rel="stylesheet" href="../_shell.css">
+
+</head>
+<body data-page="f-motion">
+
+<div class="nk-hero">
+  <div class="nk-eyebrow">F3 · Fundações · Motion</div>
+  <div class="nk-hero__rule"></div>
+  <h1 class="nk-h1">Movimento <em>com intenção.</em></h1>
+  <p class="nk-lede">Cada duração tem propósito. Microestados são instantâneos; entradas dramáticas são deliberadas.</p>
+</div>
+
+<div class="nk-page">
+
+  <h2 class="nk-h2">Durações</h2>
+  <div style="display:grid; gap: 12px; margin-top: 16px;">
+    
+      <div class="nk-card" style="display:grid; grid-template-columns: 100px 80px 1fr 1fr; gap: 16px; align-items: center;">
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted);">--dur-1</span>
+        <span style="font-family: var(--font-mono); font-size: 12px;">120ms</span>
+        <strong style="font-size: 14px;">Microestado</strong>
+        <span style="font-size: 13px; color: var(--fg-muted);">hover, focus, click feedback</span>
+      </div>
+    
+      <div class="nk-card" style="display:grid; grid-template-columns: 100px 80px 1fr 1fr; gap: 16px; align-items: center;">
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted);">--dur-2</span>
+        <span style="font-family: var(--font-mono); font-size: 12px;">200ms</span>
+        <strong style="font-size: 14px;">Pequena troca</strong>
+        <span style="font-size: 13px; color: var(--fg-muted);">toggle, tooltip, accordion</span>
+      </div>
+    
+      <div class="nk-card" style="display:grid; grid-template-columns: 100px 80px 1fr 1fr; gap: 16px; align-items: center;">
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted);">--dur-3</span>
+        <span style="font-family: var(--font-mono); font-size: 12px;">320ms</span>
+        <strong style="font-size: 14px;">Layout</strong>
+        <span style="font-size: 13px; color: var(--fg-muted);">drawer, sheet, dropdown</span>
+      </div>
+    
+      <div class="nk-card" style="display:grid; grid-template-columns: 100px 80px 1fr 1fr; gap: 16px; align-items: center;">
+        <span style="font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted);">--dur-4</span>
+        <span style="font-family: var(--font-mono); font-size: 12px;">520ms</span>
+        <strong style="font-size: 14px;">Entrada dramática</strong>
+        <span style="font-size: 13px; color: var(--fg-muted);">modal, hero, page transition</span>
+      </div>
+    
+  </div>
+
+  <h2 class="nk-h2">Easings</h2>
+  <div style="display:grid; gap: 12px; margin-top: 16px;">
+    <div class="nk-card" style="display:grid; grid-template-columns: 130px 1fr;">
+      <span style="font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted);">--ease-out</span>
+      <div><strong>Padrão.</strong> Para entradas e respostas a input. <code style="font-family:var(--font-mono); font-size:11px;">cubic-bezier(0.2, 0.7, 0.2, 1)</code></div>
+    </div>
+    <div class="nk-card" style="display:grid; grid-template-columns: 130px 1fr;">
+      <span style="font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted);">--ease-std</span>
+      <div><strong>Material.</strong> Para transições neutras de meio-meio. <code style="font-family:var(--font-mono); font-size:11px;">cubic-bezier(0.4, 0, 0.2, 1)</code></div>
+    </div>
+    <div class="nk-card" style="display:grid; grid-template-columns: 130px 1fr;">
+      <span style="font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted);">--ease-in</span>
+      <div><strong>Saída.</strong> Para elementos que vão embora — o sumiço acelera. <code style="font-family:var(--font-mono); font-size:11px;">cubic-bezier(0.6, 0, 0.8, 0.4)</code></div>
+    </div>
+  </div>
+
+  <h2 class="nk-h2">Princípios</h2>
+  <ul class="nk-body">
+    <li>Movimento serve à compreensão. Se a animação não esclarece o que mudou, corte.</li>
+    <li>Reduzir movimento (prefers-reduced-motion) é respeitado: substituir por opacity.</li>
+    <li>Nunca animar mais de 3 elementos ao mesmo tempo em stagger.</li>
+  </ul>
+    
+
+  <div class="nk-footer">
+    <a href="elevation.html">← Elevation</a>
+    <a href="iconography.html">Iconography →</a>
+  </div>
+</div>
+
+<script src="../_layout.js"></script>
+</body>
+</html>

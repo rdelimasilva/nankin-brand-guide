@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Progress</title><link rel="stylesheet" href="../_shell.css">
+<style>
+.cmp-demo { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cmp-demo--white { background: var(--nk-white); border: 1px solid var(--border); }
+.cmp-demo--col { flex-direction: column; align-items: stretch; }
+.cmp-spec table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
+.cmp-spec th { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 10px; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-subtle); font-weight: 600; }
+.cmp-spec td { padding: 10px 16px 10px 0; border-bottom: 1px solid var(--border); vertical-align: top; }
+.cmp-spec td:first-child { font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted); width: 30%; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid transparent; font-family: inherit; }
+.btn--primary { background: var(--nk-coral); color: #fff; }
+.btn--ghost { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn--sm { padding: 6px 12px; font-size: 13px; }
+</style></head>
+<body data-page="c-progress">
+<div class="nk-hero"><div class="nk-eyebrow">C19 · Componentes · Progress</div><div class="nk-hero__rule"></div><h1 class="nk-h1">Progress.</h1><p class="nk-lede">Linha fina, preto sobre cinza-claro. Coral só quando o progresso é a métrica em foco.</p></div>
+<div class="nk-page"><h2 class="nk-h2">Linear</h2>
+<div class="cmp-demo cmp-demo--col cmp-demo--white" style="max-width: 480px;">
+  <div><div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px;"><span>Anteprojeto</span><span style="color: var(--fg-muted); font-family: var(--font-mono); font-size: 12px;">62%</span></div><div style="height: 4px; background: var(--bg-alt); border-radius: 999px; overflow: hidden;"><div style="height: 100%; width: 62%; background: var(--nk-black);"></div></div></div>
+  <div><div style="display: flex; justify-content: space-between; font-size: 13px; margin-bottom: 6px;"><span>Honorários recebidos</span><span style="color: var(--fg-muted); font-family: var(--font-mono); font-size: 12px;">R$ 84k / R$ 142k</span></div><div style="height: 4px; background: var(--bg-alt); border-radius: 999px; overflow: hidden;"><div style="height: 100%; width: 59%; background: var(--nk-coral);"></div></div></div>
+</div>
+<h2 class="nk-h2">Circular</h2>
+<div class="cmp-demo cmp-demo--white">
+  <svg width="64" height="64" viewBox="0 0 36 36"><circle cx="18" cy="18" r="15" fill="none" stroke="var(--bg-alt)" stroke-width="3"/><circle cx="18" cy="18" r="15" fill="none" stroke="var(--nk-coral)" stroke-width="3" stroke-dasharray="58 100" stroke-dashoffset="0" transform="rotate(-90 18 18)"/><text x="18" y="22" text-anchor="middle" font-size="9" font-family="var(--font-mono)">62%</text></svg>
+</div><div class="nk-footer"><a href="breadcrumb.html">← C18 · Breadcrumb</a><a href="skeleton.html">C20 · Skeleton →</a></div></div>
+<script src="../_layout.js"></script></body></html>

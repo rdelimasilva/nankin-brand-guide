@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Dashboard</title><link rel="stylesheet" href="../_shell.css">
+<style>
+.cmp-demo { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); }
+.cmp-demo--p0 { padding: 0; overflow: hidden; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid transparent; font-family: inherit; }
+.btn--primary { background: var(--nk-coral); color: #fff; }
+.btn--ghost { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn--sm { padding: 6px 12px; font-size: 13px; }
+.tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: var(--r-pill); font-size: 12px; font-weight: 500; background: var(--nk-gray-light); color: var(--fg); }
+
+  .dash { background: var(--bg); border: 1px solid var(--border); border-radius: var(--r-md); overflow: hidden; display: grid; grid-template-columns: 220px 1fr; min-height: 640px; }
+  .dash__sb { background: var(--nk-black); color: rgba(255,255,255,0.85); padding: 24px 18px; display: flex; flex-direction: column; gap: 4px; font-size: 13px; }
+  .dash__sb h4 { color: #fff; font-family: var(--font-display); font-size: 18px; margin: 0 0 20px; letter-spacing: -0.01em; }
+  .dash__sb a { color: rgba(255,255,255,0.7); padding: 8px 10px; border-radius: 6px; cursor: pointer; }
+  .dash__sb a.active { background: rgba(255,255,255,0.08); color: #fff; }
+  .dash__main { padding: 24px 28px; display: grid; gap: 18px; }
+  .dash__top { display: flex; justify-content: space-between; align-items: center; }
+  .dash__cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
+  .dash__card { background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 16px; }
+  .dash__card .lbl { font-size: 11px; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-subtle); font-weight: 600; }
+  .dash__card .val { font-family: var(--font-display); font-size: 24px; margin: 6px 0 0; letter-spacing: -0.02em; }
+  .dash__card .delta { font-family: var(--font-mono); font-size: 11px; color: var(--nk-success); }
+  .dash__row { display: grid; grid-template-columns: 1.4fr 1fr; gap: 14px; }
+  .dash__panel { background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 18px; }
+  .dash__panel h3 { margin: 0 0 14px; font-size: 14px; font-family: var(--font-display); }
+  .dash__list li { display: flex; justify-content: space-between; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 13px; }
+  .dash__list li:last-child { border-bottom: 0; }
+  .dash__list .meta { color: var(--fg-muted); font-size: 12px; }
+  
+</style></head>
+<body data-page="a-dashboard">
+<div class="nk-hero"><div class="nk-eyebrow">A1 · Aplicações · Dashboard</div><div class="nk-hero__rule"></div><h1 class="nk-h1">A tela <em>do estúdio.</em></h1><p class="nk-lede">O dashboard é a primeira tela depois do login. Mostra o que precisa de atenção hoje, sem decoração.</p></div>
+<div class="nk-page">
+  <h2 class="nk-h2">Tela completa</h2>
+  <div class="cmp-demo cmp-demo--p0">
+  <div class="dash">
+    <aside class="dash__sb">
+      <h4>nankin.</h4>
+      <a class="active">▣  Visão geral</a>
+      <a>◰  Projetos</a>
+      <a>⌖  Cronograma</a>
+      <a>⊞  Honorários</a>
+      <a>⌬  Equipe</a>
+      <a>◷  Apontamentos</a>
+      <a>⎙  Documentos</a>
+      <div style="margin-top: auto; padding-top: 18px; border-top: 1px solid rgba(255,255,255,0.08); display: flex; gap: 10px; align-items: center; font-size: 12px;">
+        <span style="width: 28px; height: 28px; border-radius: 50%; background: var(--nk-coral); color: #fff; display: grid; place-items: center; font-weight: 500;">MA</span>
+        <span>Maria A.<br><span style="color: rgba(255,255,255,0.5); font-size: 11px;">Estúdio Faber</span></span>
+      </div>
+    </aside>
+    <main class="dash__main">
+      <div class="dash__top">
+        <div><div class="nk-eyebrow">Quinta-feira, 24 de outubro</div><h2 style="margin: 4px 0 0; font-family: var(--font-display); font-size: 26px; letter-spacing: -0.02em;">Bom dia, Maria.</h2></div>
+        <div style="display:flex; gap: 8px;"><button class="btn btn--ghost btn--sm">Importar</button><button class="btn btn--primary btn--sm">+ Novo projeto</button></div>
+      </div>
+
+      <div class="dash__cards">
+        <div class="dash__card"><div class="lbl">Projetos ativos</div><div class="val">14</div><div class="delta">+2 este mês</div></div>
+        <div class="dash__card"><div class="lbl">Honorários a receber</div><div class="val">R$ 482k</div><div class="delta">↑ 12% vs. set</div></div>
+        <div class="dash__card"><div class="lbl">Horas no mês</div><div class="val">386h</div><div class="delta" style="color: var(--fg-muted);">— 5h não lançadas</div></div>
+        <div class="dash__card"><div class="lbl">Atrasados</div><div class="val">3</div><div class="delta" style="color: var(--nk-error);">requer atenção</div></div>
+      </div>
+
+      <div class="dash__row">
+        <div class="dash__panel">
+          <h3>Projetos com prazo nesta semana</h3>
+          <ul class="dash__list" style="list-style: none; padding: 0; margin: 0;">
+            <li><span><strong>Casa do Lago</strong><div class="meta">Anteprojeto · entrega sex 25/out</div></span><span class="tag" style="background: rgba(216,155,42,0.18); color: var(--nk-warn);">2 dias</span></li>
+            <li><span><strong>Reforma V. Madalena</strong><div class="meta">Detalhamento · entrega seg 28/out</div></span><span class="tag">5 dias</span></li>
+            <li><span><strong>Loja Conceito</strong><div class="meta">Memorial · entrega qua 30/out</div></span><span class="tag">7 dias</span></li>
+            <li><span><strong>Edifício Solar</strong><div class="meta">Aprovação prefeitura</div></span><span class="tag" style="background: rgba(200,68,58,0.15); color: var(--nk-error);">atrasado</span></li>
+          </ul>
+        </div>
+        <div class="dash__panel">
+          <h3>Cobranças pendentes</h3>
+          <ul class="dash__list" style="list-style: none; padding: 0; margin: 0;">
+            <li><span><strong>Família Almeida</strong><div class="meta">parcela 3 de 5</div></span><span style="font-family: var(--font-mono); font-size: 13px;">R$ 28.400</span></li>
+            <li><span><strong>Inc. Aurora</strong><div class="meta">parcela 2 de 4</div></span><span style="font-family: var(--font-mono); font-size: 13px;">R$ 95.000</span></li>
+            <li><span><strong>Marcos Lima</strong><div class="meta">parcela única</div></span><span style="font-family: var(--font-mono); font-size: 13px;">R$ 12.900</span></li>
+            <li style="border-top: 1px solid var(--border); padding-top: 12px; margin-top: 4px; font-weight: 500;"><span>Total</span><span style="font-family: var(--font-mono); font-size: 14px;">R$ 136.300</span></li>
+          </ul>
+        </div>
+      </div>
+    </main>
+  </div>
+  </div>
+
+  <h2 class="nk-h2">Princípios</h2>
+  <ul class="nk-body">
+    <li>Sidebar preta — fixa, simbólica, é a "porta da casa".</li>
+    <li>Conteúdo respira em fundo bege; cards brancos só onde há informação acionável.</li>
+    <li>Coral aparece 1× na primeira dobra (CTA principal); nunca em duas ações primárias.</li>
+    <li>Tipografia: Plus Jakarta no UI, TS Qamus nos títulos editoriais ("Bom dia, Maria.").</li>
+  </ul>
+  <div class="nk-footer"><a href="../patterns/tile.html">← P7 · Tile</a><a href="site.html">A2 · Site →</a></div></div>
+<script src="../_layout.js"></script></body></html>

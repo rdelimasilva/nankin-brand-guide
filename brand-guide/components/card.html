@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Card</title>
+<link rel="stylesheet" href="../_shell.css">
+
+<style>
+.cmp-demo { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cmp-demo--white { background: var(--nk-white); border: 1px solid var(--border); }
+.cmp-demo--center { justify-content: center; }
+.cmp-demo--col { flex-direction: column; align-items: stretch; }
+.cmp-spec table { width: 100%; border-collapse: collapse; font-size: 14px; margin-top: 12px; }
+.cmp-spec th { text-align: left; padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 10px; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-subtle); font-weight: 600; }
+.cmp-spec td { padding: 10px 16px 10px 0; border-bottom: 1px solid var(--border); vertical-align: top; }
+.cmp-spec td:first-child { font-family: var(--font-mono); font-size: 12px; color: var(--fg-muted); width: 30%; }
+
+/* primitives */
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid transparent; font-family: inherit; transition: all 120ms var(--ease-out); }
+.btn--primary { background: var(--nk-coral); color: #fff; }
+.btn--primary:hover { background: var(--nk-coral-deep); }
+.btn--secondary { background: var(--nk-black); color: #fff; }
+.btn--ghost { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn--ghost:hover { background: var(--nk-gray-light); }
+.btn--text { background: transparent; color: var(--fg); }
+.btn--danger { background: var(--nk-error); color: #fff; }
+.btn--sm { padding: 6px 12px; font-size: 13px; }
+.btn--lg { padding: 14px 22px; font-size: 16px; }
+.btn:disabled { opacity: 0.4; cursor: not-allowed; }
+.btn--icon { padding: 10px; }
+
+.tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: var(--r-pill); font-size: 12px; font-weight: 500; background: var(--nk-gray-light); color: var(--fg); }
+.tag--coral { background: rgba(254,110,96,0.15); color: var(--nk-coral-deep); }
+.tag--black { background: var(--nk-black); color: #fff; }
+.tag--success { background: rgba(46,139,107,0.15); color: var(--nk-success); }
+.tag--warn { background: rgba(216,155,42,0.18); color: var(--nk-warn); }
+.tag--error { background: rgba(200,68,58,0.15); color: var(--nk-error); }
+.tag--outline { background: transparent; border: 1px solid var(--border); }
+.tag .x { width: 14px; height: 14px; border-radius: 50%; background: rgba(0,0,0,0.1); display: inline-flex; align-items: center; justify-content: center; font-size: 10px; cursor: pointer; }
+
+.card-demo { background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 20px; }
+.card-demo h4 { margin: 0; font-size: 16px; font-family: var(--font-display); letter-spacing: -0.01em; }
+.card-demo p { font-size: 13px; color: var(--fg-muted); margin: 8px 0 0; line-height: 1.5; }
+
+.alert { display: flex; gap: 12px; padding: 14px 16px; border-radius: var(--r-md); border: 1px solid; align-items: flex-start; }
+.alert__dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 6px; flex-shrink: 0; }
+.alert__body { font-size: 14px; line-height: 1.5; }
+.alert__body strong { display: block; margin-bottom: 2px; font-size: 13px; }
+.alert--info { border-color: rgba(61,107,179,0.3); background: rgba(61,107,179,0.06); } .alert--info .alert__dot { background: var(--nk-info); }
+.alert--success { border-color: rgba(46,139,107,0.3); background: rgba(46,139,107,0.06); } .alert--success .alert__dot { background: var(--nk-success); }
+.alert--warn { border-color: rgba(216,155,42,0.35); background: rgba(216,155,42,0.08); } .alert--warn .alert__dot { background: var(--nk-warn); }
+.alert--error { border-color: rgba(200,68,58,0.3); background: rgba(200,68,58,0.06); } .alert--error .alert__dot { background: var(--nk-error); }
+</style>
+</head>
+<body data-page="c-card">
+<div class="nk-hero">
+  <div class="nk-eyebrow">C2 · Componentes · Card</div>
+  <div class="nk-hero__rule"></div>
+  <h1 class="nk-h1">Cards <em>são contêineres.</em></h1>
+  <p class="nk-lede">Um card agrupa informação relacionada. Borda fina por padrão; sombra apenas em hover ou em camadas elevadas.</p>
+</div>
+<div class="nk-page">
+
+  <h2 class="nk-h2">Variações</h2>
+  <div class="cmp-demo cmp-demo--white" style="display:grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; align-items:stretch;">
+    <div class="card-demo"><div class="nk-eyebrow">Padrão</div><h4 style="margin-top:8px;">Estúdio Faber</h4><p>4 projetos ativos · Última atividade hoje</p></div>
+    <div class="card-demo" style="background: var(--bg-alt); border-color: transparent;"><div class="nk-eyebrow">Muted</div><h4 style="margin-top:8px;">Estúdio Faber</h4><p>4 projetos ativos · Última atividade hoje</p></div>
+    <div class="card-demo" style="box-shadow: var(--shadow-2);"><div class="nk-eyebrow">Elevado</div><h4 style="margin-top:8px;">Estúdio Faber</h4><p>4 projetos ativos · Última atividade hoje</p></div>
+  </div>
+
+  <h2 class="nk-h2">Anatomia</h2>
+  <div class="cmp-demo cmp-demo--white">
+    <div class="card-demo" style="width: 100%; padding: 0; overflow: hidden;">
+      <div style="height: 140px; background: linear-gradient(135deg, var(--nk-coral), var(--nk-coral-deep));"></div>
+      <div style="padding: 20px;">
+        <div style="display:flex; gap: 8px; margin-bottom: 12px;">
+          <span class="tag tag--coral">Em andamento</span>
+          <span class="tag tag--outline">Residencial</span>
+        </div>
+        <h4>Casa do Lago · Campos do Jordão</h4>
+        <p>Anteprojeto · 380m² · entrega prevista para 12 / nov</p>
+        <div style="display:flex; justify-content: space-between; align-items: center; margin-top: 16px; padding-top: 16px; border-top: 1px solid var(--border);">
+          <div style="display:flex; gap: -8px;">
+            <div style="width: 24px; height: 24px; border-radius: 50%; background: #1f3a5f; border: 2px solid #fff; color: #fff; font-size: 10px; display: grid; place-items: center;">MA</div>
+            <div style="width: 24px; height: 24px; border-radius: 50%; background: #2c5d3f; border: 2px solid #fff; color: #fff; font-size: 10px; display: grid; place-items: center; margin-left: -8px;">RF</div>
+          </div>
+          <button class="btn btn--text btn--sm">Abrir →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="nk-h2">Especificação</h2>
+  <div class="cmp-spec">
+    <table>
+      <thead><tr><th>Token</th><th>Valor</th></tr></thead>
+      <tbody>
+        <tr><td>padding</td><td>--sp-5 (24px) · --sp-4 (16px) compacto</td></tr>
+        <tr><td>border</td><td>1px solid --border</td></tr>
+        <tr><td>border-radius</td><td>--r-md (8px) · --r-lg (12px) editorial</td></tr>
+        <tr><td>shadow (rest)</td><td>none</td></tr>
+        <tr><td>shadow (hover)</td><td>--shadow-2</td></tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div class="nk-footer">
+    <a href="button.html">← C1 · Button</a>
+    <a href="tag.html">C3 · Tag →</a>
+  </div>
+</div>
+<script src="../_layout.js"></script>
+</body>
+</html>

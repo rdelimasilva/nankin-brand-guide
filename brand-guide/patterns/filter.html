@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Filter</title><link rel="stylesheet" href="../_shell.css">
+<style>
+.cmp-demo { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cmp-demo--white { background: var(--nk-white); border: 1px solid var(--border); }
+.cmp-demo--col { flex-direction: column; align-items: stretch; }
+.cmp-demo--p0 { padding: 0; overflow: hidden; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid transparent; font-family: inherit; }
+.btn--primary { background: var(--nk-coral); color: #fff; }
+.btn--ghost { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn--sm { padding: 6px 12px; font-size: 13px; }
+.tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: var(--r-pill); font-size: 12px; font-weight: 500; background: var(--nk-gray-light); color: var(--fg); }
+</style></head>
+<body data-page="p-filter">
+<div class="nk-hero"><div class="nk-eyebrow">P5 · Padrões · Filter</div><div class="nk-hero__rule"></div><h1 class="nk-h1">Filter.</h1><p class="nk-lede">Filtros vivem no topo da lista, como tags. Cada filtro ativo é removível com um clique.</p></div>
+<div class="nk-page"><h2 class="nk-h2">Barra de filtros</h2>
+<div class="cmp-demo cmp-demo--white" style="display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;">
+  <div style="display: flex; gap: 8px; flex-wrap: wrap; align-items: center;">
+    <span style="font-size: 12px; color: var(--fg-subtle);">FILTRADO POR</span>
+    <span class="tag">Residencial<span style="margin-left: 4px; cursor: pointer; opacity: 0.6;">×</span></span>
+    <span class="tag">Em andamento<span style="margin-left: 4px; cursor: pointer; opacity: 0.6;">×</span></span>
+    <span class="tag">SP — Capital<span style="margin-left: 4px; cursor: pointer; opacity: 0.6;">×</span></span>
+    <a style="font-size: 12px; color: var(--fg-muted); text-decoration: underline; margin-left: 4px;">Limpar tudo</a>
+  </div>
+  <div style="display:flex; gap: 8px;">
+    <button class="btn btn--ghost btn--sm"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 6h18M6 12h12M10 18h4"/></svg>Adicionar filtro</button>
+    <button class="btn btn--ghost btn--sm">Ordenar: Mais recente</button>
+  </div>
+</div>
+<h2 class="nk-h2">Painel lateral</h2>
+<div class="cmp-demo cmp-demo--white cmp-demo--p0" style="display: grid; grid-template-columns: 220px 1fr;">
+  <div style="padding: 20px; border-right: 1px solid var(--border); font-size: 13px;">
+    <div class="nk-eyebrow" style="margin-bottom: 10px;">Tipo</div>
+    <div style="display: grid; gap: 8px; margin-bottom: 18px;"><label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" checked style="accent-color: var(--nk-coral);"> Residencial <span style="color: var(--fg-subtle); margin-left: auto;">142</span></label><label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" style="accent-color: var(--nk-coral);"> Comercial <span style="color: var(--fg-subtle); margin-left: auto;">68</span></label><label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" style="accent-color: var(--nk-coral);"> Institucional <span style="color: var(--fg-subtle); margin-left: auto;">12</span></label></div>
+    <div class="nk-eyebrow" style="margin-bottom: 10px;">Status</div>
+    <div style="display: grid; gap: 8px;"><label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" checked style="accent-color: var(--nk-coral);"> Em andamento</label><label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" style="accent-color: var(--nk-coral);"> Em revisão</label><label style="display:flex; gap:8px; align-items:center;"><input type="checkbox" style="accent-color: var(--nk-coral);"> Concluído</label></div>
+  </div>
+  <div style="padding: 20px; color: var(--fg-muted); font-size: 13px;">… resultados …</div>
+</div><div class="nk-footer"><a href="search.html">← P4 · Search</a><a href="sticky-card.html">P6 · Sticky Card →</a></div></div>
+<script src="../_layout.js"></script></body></html>

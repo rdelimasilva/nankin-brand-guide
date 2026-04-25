@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Elevation</title>
+<link rel="stylesheet" href="../_shell.css">
+
+</head>
+<body data-page="f-elevation">
+
+<div class="nk-hero">
+  <div class="nk-eyebrow">F3 · Fundações · Elevation</div>
+  <div class="nk-hero__rule"></div>
+  <h1 class="nk-h1">Sombra é função, <em>nunca decoração.</em></h1>
+  <p class="nk-lede">Quatro níveis de elevação. Cada um responde a uma camada lógica — repouso, hover, popover, modal.</p>
+</div>
+
+<div class="nk-page">
+
+  <div class="nk-grid nk-grid--2" style="margin-top: 16px;">
+    
+      <div class="nk-card" style="padding: 32px;">
+        <div style="height: 100px; background: var(--nk-white); border-radius: var(--r-md); box-shadow: var(--shadow-1);"></div>
+        <div class="nk-eyebrow" style="margin-top: 24px;">--shadow-1</div>
+        <p style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); margin-top: 6px;">0 1px 2px rgba(0,0,0,0.06)</p>
+        <p style="font-size: 13px; margin-top: 8px;">Repouso · linha sutil entre camadas.</p>
+      </div>
+    
+      <div class="nk-card" style="padding: 32px;">
+        <div style="height: 100px; background: var(--nk-white); border-radius: var(--r-md); box-shadow: var(--shadow-2);"></div>
+        <div class="nk-eyebrow" style="margin-top: 24px;">--shadow-2</div>
+        <p style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); margin-top: 6px;">0 6px 16px -6px rgba(0,0,0,0.10)</p>
+        <p style="font-size: 13px; margin-top: 8px;">Hover · card que reage ao mouse.</p>
+      </div>
+    
+      <div class="nk-card" style="padding: 32px;">
+        <div style="height: 100px; background: var(--nk-white); border-radius: var(--r-md); box-shadow: var(--shadow-3);"></div>
+        <div class="nk-eyebrow" style="margin-top: 24px;">--shadow-3</div>
+        <p style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); margin-top: 6px;">0 24px 48px -16px rgba(0,0,0,0.14)</p>
+        <p style="font-size: 13px; margin-top: 8px;">Popover, dropdown, sheet.</p>
+      </div>
+    
+      <div class="nk-card" style="padding: 32px;">
+        <div style="height: 100px; background: var(--nk-white); border-radius: var(--r-md); box-shadow: var(--shadow-coral);"></div>
+        <div class="nk-eyebrow" style="margin-top: 24px;">--shadow-coral</div>
+        <p style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); margin-top: 6px;">0 12px 32px -10px rgba(254,110,96,0.40)</p>
+        <p style="font-size: 13px; margin-top: 8px;">Glow coral · CTA primário em destaque.</p>
+      </div>
+    
+  </div>
+
+  <h2 class="nk-h2">Regras</h2>
+  <ul class="nk-body">
+    <li>Cards em repouso usam apenas <code>--shadow-1</code> (ou border, não os dois).</li>
+    <li>Hover sobe para <code>--shadow-2</code>. Transition: <code>200ms var(--ease-out)</code>.</li>
+    <li>Coral glow é raro — apenas em CTA hero ou momento dramático. Nunca em mais de 1 elemento por tela.</li>
+  </ul>
+    
+
+  <div class="nk-footer">
+    <a href="radii.html">← Radii</a>
+    <a href="motion.html">Motion →</a>
+  </div>
+</div>
+
+<script src="../_layout.js"></script>
+</body>
+</html>

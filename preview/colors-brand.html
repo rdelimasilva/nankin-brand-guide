@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Nankin · Cor de marca</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 0; display: grid; grid-template-columns: 2fr 1fr 1fr; min-height: 200px; }
+  .swatch { padding: 24px; display: flex; flex-direction: column; justify-content: space-between; }
+  .swatch .name { font-family: var(--font-display); font-weight: 700; font-size: 22px; letter-spacing: -0.02em; }
+  .swatch .meta { font-family: var(--font-text); font-size: 11px; letter-spacing: var(--tr-mega); text-transform: uppercase; }
+  .swatch .hex  { font-family: var(--font-mono); font-size: 12px; opacity: 0.85; }
+  .a { background: var(--nk-coral); color: var(--nk-white); }
+  .b { background: var(--nk-coral-soft); color: var(--nk-black); }
+  .c { background: var(--nk-coral-deep); color: var(--nk-white); }
+</style>
+</head>
+<body>
+  <div class="swatch a">
+    <div class="meta">marca · primária</div>
+    <div>
+      <div class="name">Coral</div>
+      <div class="hex" style="margin-top: 4px;">#FE6E60 · RGB 254 / 110 / 96</div>
+    </div>
+  </div>
+  <div class="swatch b">
+    <div class="meta">soft (utilitário)</div>
+    <div>
+      <div class="hex">#FFD9D3</div>
+    </div>
+  </div>
+  <div class="swatch c">
+    <div class="meta">deep (hover)</div>
+    <div>
+      <div class="hex">#E54E40</div>
+    </div>
+  </div>
+</body>
+</html>

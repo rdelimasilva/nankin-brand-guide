@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Sticky Card</title><link rel="stylesheet" href="../_shell.css">
+<style>
+.cmp-demo { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+.cmp-demo--white { background: var(--nk-white); border: 1px solid var(--border); }
+.cmp-demo--col { flex-direction: column; align-items: stretch; }
+.cmp-demo--p0 { padding: 0; overflow: hidden; }
+.btn { display: inline-flex; align-items: center; gap: 8px; padding: 10px 18px; border-radius: var(--r-md); font-size: 14px; font-weight: 500; cursor: pointer; border: 1px solid transparent; font-family: inherit; }
+.btn--primary { background: var(--nk-coral); color: #fff; }
+.btn--ghost { background: transparent; color: var(--fg); border-color: var(--border); }
+.btn--sm { padding: 6px 12px; font-size: 13px; }
+.tag { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: var(--r-pill); font-size: 12px; font-weight: 500; background: var(--nk-gray-light); color: var(--fg); }
+</style></head>
+<body data-page="p-sticky-card">
+<div class="nk-hero"><div class="nk-eyebrow">P6 · Padrões · Sticky Card</div><div class="nk-hero__rule"></div><h1 class="nk-h1">Sticky card.</h1><p class="nk-lede">Card que acompanha o scroll. Para ações persistentes em páginas longas — orçamento, carrinho, índice.</p></div>
+<div class="nk-page"><h2 class="nk-h2">Layout</h2>
+<div class="cmp-demo cmp-demo--white cmp-demo--p0" style="display: grid; grid-template-columns: 1fr 280px; gap: 24px; padding: 24px;">
+  <div style="display: grid; gap: 16px;">
+    <div style="height: 24px; background: var(--bg-alt); border-radius: 4px; width: 60%;"></div>
+    <div style="height: 12px; background: var(--bg-alt); border-radius: 4px;"></div>
+    <div style="height: 12px; background: var(--bg-alt); border-radius: 4px; width: 90%;"></div>
+    <div style="height: 12px; background: var(--bg-alt); border-radius: 4px; width: 80%;"></div>
+    <div style="height: 200px; background: var(--bg-alt); border-radius: var(--r-md); margin: 8px 0;"></div>
+    <div style="height: 12px; background: var(--bg-alt); border-radius: 4px;"></div>
+    <div style="height: 12px; background: var(--bg-alt); border-radius: 4px; width: 75%;"></div>
+  </div>
+  <div>
+    <div style="position: sticky; top: 24px; background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 20px; box-shadow: var(--shadow-1);">
+      <div class="nk-eyebrow">Resumo</div>
+      <h4 style="margin: 8px 0 0; font-size: 16px;">Casa do Lago</h4>
+      <div style="display: grid; gap: 8px; margin: 16px 0; padding: 16px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); font-size: 13px;">
+        <div style="display: flex; justify-content: space-between;"><span style="color: var(--fg-muted);">Honorários</span><span style="font-family: var(--font-mono);">R$ 142.000</span></div>
+        <div style="display: flex; justify-content: space-between;"><span style="color: var(--fg-muted);">Recebido</span><span style="font-family: var(--font-mono);">R$ 84.000</span></div>
+        <div style="display: flex; justify-content: space-between; font-weight: 500;"><span>A receber</span><span style="font-family: var(--font-mono);">R$ 58.000</span></div>
+      </div>
+      <button class="btn btn--primary" style="width: 100%; justify-content: center;">Emitir cobrança</button>
+    </div>
+  </div>
+</div><div class="nk-footer"><a href="filter.html">← P5 · Filter</a><a href="tile.html">P7 · Tile →</a></div></div>
+<script src="../_layout.js"></script></body></html>

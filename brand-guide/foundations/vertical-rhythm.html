@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Vertical rhythm</title>
+<link rel="stylesheet" href="../_shell.css">
+
+</head>
+<body data-page="f-vertical-rhythm">
+
+<div class="nk-hero">
+  <div class="nk-eyebrow">F3 · Fundações · Vertical rhythm</div>
+  <div class="nk-hero__rule"></div>
+  <h1 class="nk-h1">Tudo se alinha <em>à linha de 8.</em></h1>
+  <p class="nk-lede">Cada elemento descansa em uma linha de baseline de 8px. O resultado é uma página que respira igual de cima a baixo.</p>
+</div>
+
+<div class="nk-page">
+
+  <h2 class="nk-h2">Princípios</h2>
+  <ul class="nk-body">
+    <li>Baseline grid de <strong>8px</strong>. Todo padding, margem, line-height termina num múltiplo de 8.</li>
+    <li>Se você precisa de 7px ou 10px, está em desvio. Reescolha o token.</li>
+    <li>Body line-height = 24px (16 × 1,5). Headline line-height = 32 / 40 / 48 px.</li>
+  </ul>
+
+  <h2 class="nk-h2">Visualização</h2>
+  <div style="margin-top: 16px; padding: 24px; background: var(--bg-alt); border-radius: var(--r-md); position: relative; overflow: hidden;">
+    <div style="position: absolute; inset: 0; background-image: linear-gradient(to bottom, transparent 0, transparent 7px, rgba(254,110,96,0.25) 7px, rgba(254,110,96,0.25) 8px); background-size: 100% 8px; pointer-events: none;"></div>
+    <div style="position: relative;">
+      <div class="nk-eyebrow">Eyebrow · 16px</div>
+      <h2 style="font-family: var(--font-display); font-size: 32px; line-height: 40px; margin: 8px 0 0; letter-spacing: -0.02em;">Cada projeto, cada hora, cada custo.</h2>
+      <p style="font-size: 16px; line-height: 24px; margin: 16px 0 0; max-width: 60ch;">Nankin organiza o que hoje vive em planilha, e-mail e WhatsApp. Você vê o status de cada projeto sem precisar perguntar a ninguém.</p>
+      <div style="height: 8px;"></div>
+      <a style="display:inline-block; margin-top: 16px; padding: 8px 16px; background: var(--nk-black); color: var(--nk-white); border-radius: 4px; font-size: 14px; line-height: 24px;">Ver demo</a>
+    </div>
+  </div>
+
+  <h2 class="nk-h2">Tabela de altura</h2>
+  <table style="width:100%; border-collapse:collapse; font-size:14px; margin-top:12px;">
+    <thead><tr><th style="text-align:left; padding:10px 0; border-bottom:1px solid var(--border); font-size:10px; letter-spacing:var(--tr-mega); text-transform:uppercase; color:var(--fg-subtle);">Elemento</th><th style="text-align:left; padding:10px 0; border-bottom:1px solid var(--border); font-size:10px; letter-spacing:var(--tr-mega); text-transform:uppercase; color:var(--fg-subtle);">Altura</th></tr></thead>
+    <tbody>
+      <tr><td style="padding:10px 0; border-bottom:1px solid var(--border);">Botão padrão</td><td style="font-family:var(--font-mono); font-size:12px;">40px (5 × 8)</td></tr>
+      <tr><td style="padding:10px 0; border-bottom:1px solid var(--border);">Input padrão</td><td style="font-family:var(--font-mono); font-size:12px;">48px (6 × 8)</td></tr>
+      <tr><td style="padding:10px 0; border-bottom:1px solid var(--border);">Linha de tabela</td><td style="font-family:var(--font-mono); font-size:12px;">48px (6 × 8)</td></tr>
+      <tr><td style="padding:10px 0; border-bottom:1px solid var(--border);">Avatar pequeno</td><td style="font-family:var(--font-mono); font-size:12px;">24px (3 × 8)</td></tr>
+      <tr><td style="padding:10px 0;">Avatar médio</td><td style="font-family:var(--font-mono); font-size:12px;">40px (5 × 8)</td></tr>
+    </tbody>
+  </table>
+    
+
+  <div class="nk-footer">
+    <a href="grid.html">← Grid</a>
+    <a href="radii.html">Radii →</a>
+  </div>
+</div>
+
+<script src="../_layout.js"></script>
+</body>
+</html>

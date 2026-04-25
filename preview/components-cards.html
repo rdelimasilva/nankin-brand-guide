@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Nankin · Card</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 24px; background: var(--bg-alt); display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+  .card { background: var(--nk-white); border: 1px solid var(--border); border-radius: var(--r-md); padding: 22px; transition: all var(--dur-2) var(--ease-out); }
+  .card:hover { border-color: var(--border-strong); box-shadow: var(--shadow-2); }
+  .eyebrow { font-family: var(--font-text); font-size: 10px; font-weight: 500; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-subtle); margin-bottom: 12px; }
+  .title { font-family: var(--font-display); font-weight: 600; font-size: 20px; letter-spacing: -0.01em; margin: 0 0 8px; color: var(--fg); }
+  .body { font-family: var(--font-text); font-size: 14px; line-height: 1.5; color: var(--fg-muted); margin: 0; }
+  .row { display: flex; align-items: center; gap: 8px; margin-top: 16px; }
+  .row .tag { font-family: var(--font-text); font-size: 11px; padding: 4px 10px; border-radius: var(--r-pill); border: 1px solid var(--border); color: var(--fg-muted); }
+  .progress { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
+  .progress .bar { flex: 1; height: 4px; background: var(--nk-ink-100); border-radius: 999px; overflow: hidden; }
+  .progress .bar > i { display: block; height: 100%; background: var(--nk-black); }
+  .progress .pct { font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); }
+  .coral-card { background: var(--nk-coral); border: none; }
+  .coral-card .eyebrow, .coral-card .body { color: var(--nk-white); opacity: 0.85; }
+  .coral-card .title { color: var(--nk-white); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="eyebrow">Projeto · 2025</div>
+    <h3 class="title">Casa Aurora</h3>
+    <p class="body">Residencial unifamiliar · 380 m² · 4 profissionais alocados.</p>
+    <div class="progress"><div class="bar"><i style="width: 62%"></i></div><span class="pct">62%</span></div>
+  </div>
+  <div class="card coral-card">
+    <div class="eyebrow">Comece grátis</div>
+    <h3 class="title">14 dias, sem cartão.</h3>
+    <p class="body">Sua planilha vira plataforma no primeiro dia.</p>
+  </div>
+</body>
+</html>

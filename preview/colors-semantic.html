@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Nankin · Cores semânticas</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 24px; background: var(--bg); display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; min-height: 130px; }
+  .chip { border-radius: var(--r-md); padding: 14px; min-height: 72px; display: flex; flex-direction: column; justify-content: space-between; color: var(--nk-white); }
+  .chip .label { font-family: var(--font-text); font-size: 10px; letter-spacing: var(--tr-mega); text-transform: uppercase; opacity: 0.85; }
+  .chip .name { font-family: var(--font-display); font-weight: 600; font-size: 18px; }
+  .chip .hex { font-family: var(--font-mono); font-size: 11px; opacity: 0.85; }
+</style>
+</head>
+<body>
+  <div class="chip" style="background: var(--nk-success);"><div class="label">success</div><div><div class="name">Sucesso</div><div class="hex">#2E8B6B</div></div></div>
+  <div class="chip" style="background: var(--nk-warn);"><div class="label">warn</div><div><div class="name">Atenção</div><div class="hex">#D89B2A</div></div></div>
+  <div class="chip" style="background: var(--nk-error);"><div class="label">error</div><div><div class="name">Erro</div><div class="hex">#C8443A</div></div></div>
+  <div class="chip" style="background: var(--nk-info);"><div class="label">info</div><div><div class="name">Info</div><div class="hex">#3D6BB3</div></div></div>
+</body>
+</html>

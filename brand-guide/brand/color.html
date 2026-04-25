@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nankin · Cores</title>
+<link rel="stylesheet" href="../_shell.css">
+
+</head>
+<body data-page="b-color">
+<div class="nk-hero">
+  <div class="nk-eyebrow">F4 · Marca · Cores</div>
+  <div class="nk-hero__rule"></div>
+  <h1 class="nk-h1">Cinco cores. <em>Sem extensão.</em></h1>
+  <p class="nk-lede">Coral, preto, cinza, cinza-claro, branco. Quando a tela parece pedir uma sexta cor, ela está pedindo melhor hierarquia, não mais cor.</p>
+</div>
+<div class="nk-page">
+
+  <h2 class="nk-h2">A paleta</h2>
+  <div style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr; gap: 8px; margin-top: 16px; height: 220px;">
+    <div style="background: #FE6E60; padding: 16px; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; border-radius: var(--r-sm);">
+      <div style="font-size: 14px; font-weight: 600;">Coral</div>
+      <div style="font-family: var(--font-mono); font-size: 11px; opacity: 0.8;">#FE6E60</div>
+    </div>
+    <div style="background: #000; padding: 16px; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; border-radius: var(--r-sm);">
+      <div style="font-size: 14px; font-weight: 600;">Preto</div>
+      <div style="font-family: var(--font-mono); font-size: 11px; opacity: 0.8;">#000000</div>
+    </div>
+    <div style="background: #2E2E2E; padding: 16px; color: #fff; display: flex; flex-direction: column; justify-content: flex-end; border-radius: var(--r-sm);">
+      <div style="font-size: 14px; font-weight: 600;">Cinza</div>
+      <div style="font-family: var(--font-mono); font-size: 11px; opacity: 0.8;">#2E2E2E</div>
+    </div>
+    <div style="background: #F5F5F5; padding: 16px; display: flex; flex-direction: column; justify-content: flex-end; border-radius: var(--r-sm); border: 1px solid var(--border);">
+      <div style="font-size: 14px; font-weight: 600;">Cinza-claro</div>
+      <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">#F5F5F5</div>
+    </div>
+    <div style="background: #FFF; padding: 16px; display: flex; flex-direction: column; justify-content: flex-end; border-radius: var(--r-sm); border: 1px solid var(--border);">
+      <div style="font-size: 14px; font-weight: 600;">Branco</div>
+      <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">#FFFFFF</div>
+    </div>
+  </div>
+
+  <h2 class="nk-h2">Distribuição típica</h2>
+  <div class="nk-card" style="padding: 32px;">
+    <div style="display: flex; height: 60px; border-radius: var(--r-sm); overflow: hidden;">
+      <div style="background: #FFF; flex: 60; border: 1px solid var(--border);"></div>
+      <div style="background: #F5F5F5; flex: 25;"></div>
+      <div style="background: #000; flex: 8;"></div>
+      <div style="background: #2E2E2E; flex: 4;"></div>
+      <div style="background: #FE6E60; flex: 3;"></div>
+    </div>
+    <div style="display: flex; gap: 24px; margin-top: 16px; font-size: 12px;">
+      <span><strong>60%</strong> Branco</span>
+      <span><strong>25%</strong> Cinza-claro</span>
+      <span><strong>8%</strong> Preto</span>
+      <span><strong>4%</strong> Cinza</span>
+      <span style="color: var(--nk-coral);"><strong>3%</strong> Coral</span>
+    </div>
+    <p class="nk-meta" style="margin-top: 16px;">Coral é acento. Em uma página típica, ocupa apenas 3-5% da área visual.</p>
+  </div>
+
+  <h2 class="nk-h2">Combinações</h2>
+  <div class="nk-grid nk-grid--3" style="margin-top: 16px;">
+    <div style="background: #fff; border: 1px solid var(--border); padding: 32px; border-radius: var(--r-md); height: 180px; display:flex; flex-direction: column; justify-content: space-between;">
+      <div class="nk-eyebrow">Padrão</div>
+      <div>
+        <h3 style="font-family: var(--font-display); font-size: 22px; margin: 0; letter-spacing: -0.01em;">Branco + preto + coral</h3>
+        <p style="font-size: 13px; color: var(--fg-muted); margin-top: 8px;">95% das telas. Coral só onde precisa puxar a atenção.</p>
+      </div>
+    </div>
+    <div style="background: #000; padding: 32px; border-radius: var(--r-md); height: 180px; color: #fff; display:flex; flex-direction: column; justify-content: space-between;">
+      <div class="nk-eyebrow" style="color: var(--nk-coral);">Hero</div>
+      <div>
+        <h3 style="font-family: var(--font-display); font-size: 22px; margin: 0; letter-spacing: -0.01em; color: #fff;">Preto + coral</h3>
+        <p style="font-size: 13px; color: rgba(255,255,255,0.7); margin-top: 8px;">Capa de deck, hero institucional, banner de campanha.</p>
+      </div>
+    </div>
+    <div style="background: #FE6E60; padding: 32px; border-radius: var(--r-md); height: 180px; color: #fff; display:flex; flex-direction: column; justify-content: space-between;">
+      <div class="nk-eyebrow" style="color: rgba(255,255,255,0.9);">Conversão</div>
+      <div>
+        <h3 style="font-family: var(--font-display); font-size: 22px; margin: 0; letter-spacing: -0.01em;">Coral + branco</h3>
+        <p style="font-size: 13px; color: rgba(255,255,255,0.85); margin-top: 8px;">CTA, seção de plano, fechamento. Use com parcimônia.</p>
+      </div>
+    </div>
+  </div>
+
+  <h2 class="nk-h2">Cores funcionais</h2>
+  <p class="nk-body" style="font-size: 14px;">Para feedback funcional dentro do produto. Sempre quietas, nunca competem com coral.</p>
+  <div class="nk-grid nk-grid--4" style="margin-top: 16px;">
+    
+      <div class="nk-card" style="padding: 0; overflow: hidden;">
+        <div style="background:#2E8B6B; height: 80px;"></div>
+        <div style="padding: 14px;">
+          <div style="font-size:14px;font-weight:600;">Sucesso</div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); margin-top: 4px;">--nk-success</div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-subtle); margin-top: 2px;">#2E8B6B</div>
+        </div>
+      </div>
+      <div class="nk-card" style="padding: 0; overflow: hidden;">
+        <div style="background:#D89B2A; height: 80px;"></div>
+        <div style="padding: 14px;">
+          <div style="font-size:14px;font-weight:600;">Aviso</div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); margin-top: 4px;">--nk-warn</div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-subtle); margin-top: 2px;">#D89B2A</div>
+        </div>
+      </div>
+      <div class="nk-card" style="padding: 0; overflow: hidden;">
+        <div style="background:#C8443A; height: 80px;"></div>
+        <div style="padding: 14px;">
+          <div style="font-size:14px;font-weight:600;">Erro</div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); margin-top: 4px;">--nk-error</div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-subtle); margin-top: 2px;">#C8443A</div>
+        </div>
+      </div>
+      <div class="nk-card" style="padding: 0; overflow: hidden;">
+        <div style="background:#3D6BB3; height: 80px;"></div>
+        <div style="padding: 14px;">
+          <div style="font-size:14px;font-weight:600;">Info</div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); margin-top: 4px;">--nk-info</div>
+          <div style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-subtle); margin-top: 2px;">#3D6BB3</div>
+        </div>
+      </div>
+  </div>
+    
+  <div class="nk-footer">
+    <a href="logos.html">← Logos & Símbolos</a>
+    <a href="typography.html">Tipografia →</a>
+  </div>
+</div>
+<script src="../_layout.js"></script>
+</body>
+</html>

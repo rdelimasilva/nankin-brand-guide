@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Nankin · Inputs</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 28px 32px; background: var(--bg); display: grid; gap: 14px; max-width: 600px; }
+  label { font-family: var(--font-text); font-size: 10px; font-weight: 600; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-muted); display: block; margin-bottom: 6px; }
+  input, textarea { font-family: var(--font-text); font-size: 15px; width: 100%; padding: 12px 14px; border: 1px solid var(--border-strong); border-radius: var(--r-md); background: var(--nk-white); color: var(--fg); box-sizing: border-box; transition: all var(--dur-2) var(--ease-out); }
+  input:focus, textarea:focus { outline: 2px solid var(--nk-coral); outline-offset: 2px; border-color: var(--nk-black); }
+  .field { }
+  .row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+</style>
+</head>
+<body>
+  <div class="row">
+    <div class="field"><label>Nome do projeto</label><input value="Casa Aurora"></div>
+    <div class="field"><label>Cliente</label><input value="Família Almeida"></div>
+  </div>
+  <div class="field"><label>Escopo</label><textarea rows="2">Residencial unifamiliar de 380 m². Anteprojeto, executivo e acompanhamento de obra.</textarea></div>
+</body>
+</html>

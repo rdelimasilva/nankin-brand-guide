@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<title>Nankin · Neutros</title>
+<link rel="stylesheet" href="../colors_and_type.css">
+<style>
+  body { margin: 0; padding: 0; display: grid; grid-template-columns: repeat(5, 1fr); min-height: 160px; }
+  .swatch { padding: 16px 14px; display: flex; flex-direction: column; justify-content: space-between; font-family: var(--font-text); font-size: 11px; }
+  .swatch .name { font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; font-size: 10px; }
+  .swatch .hex  { font-family: var(--font-mono); opacity: 0.75; font-size: 11px; }
+  .swatch .label { font-family: var(--font-display); font-weight: 600; font-size: 18px; letter-spacing: -0.01em; }
+  .light { color: var(--nk-black); }
+  .dark  { color: var(--nk-white); }
+</style>
+</head>
+<body>
+  <div class="swatch light" style="background:#FFFFFF; border-right:1px solid var(--border);">
+    <span class="name">Branco</span>
+    <span><div class="label">White</div><div class="hex">#FFFFFF</div></span>
+  </div>
+  <div class="swatch light" style="background:#F5F5F5; border-right:1px solid var(--border);">
+    <span class="name">Cinza-claro</span>
+    <span><div class="label">Gray-light</div><div class="hex">#F5F5F5</div></span>
+  </div>
+  <div class="swatch" style="background:var(--nk-coral); color:var(--nk-white);">
+    <span class="name">Coral</span>
+    <span><div class="label">Coral</div><div class="hex">#FE6E60</div></span>
+  </div>
+  <div class="swatch dark" style="background:#2E2E2E;">
+    <span class="name">Cinza</span>
+    <span><div class="label">Gray</div><div class="hex">#2E2E2E</div></span>
+  </div>
+  <div class="swatch dark" style="background:#000000;">
+    <span class="name">Preto</span>
+    <span><div class="label">Black</div><div class="hex">#000000</div></span>
+  </div>
+</body>
+</html>

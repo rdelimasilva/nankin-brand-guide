@@ -1,0 +1,16 @@
+.DS_Store
+node_modules/
+.netlify/
+.vercel/
+.cache/
+dist/
+*.log
+
+# Editor
+.vscode/
+.idea/
+*.swp
+
+# Project metadata
+.assets-manifest.json
+scraps/
