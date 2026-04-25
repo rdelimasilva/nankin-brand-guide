@@ -133,7 +133,7 @@ function nkRenderSidebar(activeId) {
   let html = '';
   html += `<div class="nk-sidebar">`;
   html += `  <a class="nk-sidebar__brand" href="${base}index.html">`;
-  html += `    <span class="nk-sidebar__wordmark">nankin.</span>`;
+  html += `    <img class="nk-sidebar__wordmark" src="${base}assets/logo-nankin-wordmark.svg" alt="nankin">`;
   html += `    <span class="nk-sidebar__suffix">Brand Guide · v3.0</span>`;
   html += `  </a>`;
   html += `  <nav class="nk-sidebar__nav">`;

@@ -3,85 +3,147 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nankin · Logos & Símbolos</title>
+<title>Nankin · Logos</title>
 <link rel="stylesheet" href="../_shell.css">
-
+<style>
+  .lockup-card { background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 48px; display: flex; flex-direction: column; gap: 18px; align-items: center; justify-content: center; min-height: 220px; }
+  .lockup-card .lbl { font-size: 11px; letter-spacing: var(--tr-mega); text-transform: uppercase; color: var(--fg-subtle); font-weight: 600; }
+  .lockup-card.dark { background: var(--nk-black); }
+  .lockup-card.dark .lbl { color: rgba(255,255,255,0.5); }
+  .lockup-card.coral { background: var(--nk-coral); }
+  .lockup-card.coral .lbl { color: rgba(255,255,255,0.7); }
+  .dont-card { background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); padding: 32px; display: flex; flex-direction: column; gap: 16px; min-height: 180px; align-items: center; justify-content: space-between; }
+  .dont-card .marker { font-size: 24px; color: var(--nk-error); align-self: flex-end; }
+  .dont-card .desc { font-size: 12px; color: var(--fg-muted); text-align: center; line-height: 1.5; }
+  .specbox { padding: 32px; background: var(--bg-alt); border-radius: var(--r-md); position: relative; }
+  .symbol { display: inline-block; }
+  .symbol svg { display: block; }
+  .lockup-h { display: inline-flex; gap: 14px; align-items: center; }
+  .lockup-v { display: inline-flex; flex-direction: column; gap: 14px; align-items: center; }
+  .nankin-word { font-family: var(--font-text); font-weight: 800; letter-spacing: -0.04em; line-height: 1; }
+</style>
 </head>
 <body data-page="b-logos">
+
 <div class="nk-hero">
-  <div class="nk-eyebrow">F4 · Marca · Logos & Símbolos</div>
+  <div class="nk-eyebrow">B2 · Marca · Logos</div>
   <div class="nk-hero__rule"></div>
-  <h1 class="nk-h1">Wordmark, símbolo, <em>lockup.</em></h1>
-  <p class="nk-lede">Três variações da marca, cada uma para um contexto. Tamanhos mínimos, safe-area e o que nunca fazer.</p>
+  <h1 class="nk-h1">Imagotipo, logotipo, <em>isotipo.</em></h1>
+  <p class="nk-lede">O símbolo da Nankin nasceu da ponta da caneta nanquim — duas metades em direções opostas, em equilíbrio e dinamismo. Une a essência artesanal do traço manual à precisão do design digital.</p>
 </div>
+
 <div class="nk-page">
 
+  <h2 class="nk-h2">Versão principal</h2>
+  <p class="nk-body">O logotipo da Nankin traduz os valores da arquitetura: precisão, modernidade e sofisticação. O símbolo geométrico, com linhas limpas e um ponto central, remete a estruturas construtivas e ao conceito de foco. A tipografia minimalista complementa o ícone, garantindo clareza e impacto.</p>
+  <div class="lockup-card" style="margin-top: 24px; padding: 64px;">
+    <img src="../assets/logo-completo-coral-on-white.png" alt="Logo Nankin" style="max-width: 360px; width: 100%; height: auto;">
+    <div class="lbl">Imagotipo · Coral sobre branco</div>
+  </div>
+
   <h2 class="nk-h2">Variações</h2>
+  <p class="nk-body">O logo pode ser usado em três variações, conforme o contexto e o espaço disponível:</p>
   <div class="nk-grid nk-grid--3" style="margin-top: 16px;">
-    <div class="nk-card" style="padding: 32px; text-align: center;">
-      <img src="../../assets/logo-nankin-wordmark.svg" style="width: 140px; max-width: 100%;">
-      <div class="nk-eyebrow" style="margin-top: 24px;">Wordmark</div>
-      <p style="font-size: 13px; color: var(--fg-muted); margin-top: 8px;">Uso padrão. Header, capa de deck, papel timbrado.</p>
+    <div class="lockup-card">
+      <div class="lockup-h">
+        <span class="symbol"><svg viewBox="0 0 313.03 314.99" width="56" height="56" fill="currentColor"><path d="M100.19,159.25c0-13.73,4.92-26.3,13.08-36.08-.06-.06-.11-.12-.17-.18C75.4,81.99,37.7,41,0,0v206.68c38.34,36.1,76.67,72.2,115.01,108.3h69.08v-106.63c-8.15,4.59-17.56,7.22-27.58,7.22-31.11,0-56.33-25.22-56.33-56.33Z"/><path d="M313.03,110.58C274.76,73.72,236.49,36.86,198.21,0h-69.27v110.13c8.15-4.59,17.56-7.22,27.58-7.22,31.11,0,56.33,25.22,56.33,56.33,0,13.2-4.55,25.32-12.15,34.92,37.45,40.27,74.89,80.54,112.34,120.81V110.58Z"/></svg></span>
+        <span class="nankin-word" style="font-size: 40px;">nankin</span>
+      </div>
+      <div class="lbl">Imagotipo · símbolo + palavra</div>
     </div>
-    <div class="nk-card" style="padding: 32px; text-align: center;">
-      <img src="../../assets/icon-nankin.svg" style="width: 56px;">
-      <div class="nk-eyebrow" style="margin-top: 24px;">Símbolo</div>
-      <p style="font-size: 13px; color: var(--fg-muted); margin-top: 8px;">Avatar, favicon, espaço apertado. Só quando o contexto já identifica.</p>
+    <div class="lockup-card">
+      <span class="nankin-word" style="font-size: 48px;">nankin</span>
+      <div class="lbl">Logotipo · só palavra</div>
     </div>
-    <div class="nk-card" style="padding: 32px; text-align: center; background: var(--nk-coral); color: var(--nk-white); border: none;">
-      <img src="../../assets/icon-nankin.svg" style="width: 56px; filter: brightness(0) invert(1);">
-      <div class="nk-eyebrow" style="margin-top: 24px; color: rgba(255,255,255,0.85);">Inverso</div>
-      <p style="font-size: 13px; color: rgba(255,255,255,0.85); margin-top: 8px;">Sobre coral ou preto. Sempre branco, nunca cinza.</p>
+    <div class="lockup-card">
+      <span class="symbol"><svg viewBox="0 0 313.03 314.99" width="80" height="80" fill="currentColor"><path d="M100.19,159.25c0-13.73,4.92-26.3,13.08-36.08-.06-.06-.11-.12-.17-.18C75.4,81.99,37.7,41,0,0v206.68c38.34,36.1,76.67,72.2,115.01,108.3h69.08v-106.63c-8.15,4.59-17.56,7.22-27.58,7.22-31.11,0-56.33-25.22-56.33-56.33Z"/><path d="M313.03,110.58C274.76,73.72,236.49,36.86,198.21,0h-69.27v110.13c8.15-4.59,17.56-7.22,27.58-7.22,31.11,0,56.33,25.22,56.33,56.33,0,13.2-4.55,25.32-12.15,34.92,37.45,40.27,74.89,80.54,112.34,120.81V110.58Z"/></svg></span>
+      <div class="lbl">Isotipo · só símbolo</div>
+    </div>
+  </div>
+
+  <h2 class="nk-h2">Versões horizontal e vertical</h2>
+  <p class="nk-body">Use a versão horizontal por padrão. A vertical é reservada para aplicações onde o espaço pede composição mais quadrada — ícones de app, capas, social.</p>
+  <div class="nk-grid nk-grid--2" style="margin-top: 16px;">
+    <div class="lockup-card" style="min-height: 260px;">
+      <div class="lockup-h">
+        <span class="symbol"><svg viewBox="0 0 313.03 314.99" width="64" height="64" fill="currentColor"><path d="M100.19,159.25c0-13.73,4.92-26.3,13.08-36.08-.06-.06-.11-.12-.17-.18C75.4,81.99,37.7,41,0,0v206.68c38.34,36.1,76.67,72.2,115.01,108.3h69.08v-106.63c-8.15,4.59-17.56,7.22-27.58,7.22-31.11,0-56.33-25.22-56.33-56.33Z"/><path d="M313.03,110.58C274.76,73.72,236.49,36.86,198.21,0h-69.27v110.13c8.15-4.59,17.56-7.22,27.58-7.22,31.11,0,56.33,25.22,56.33,56.33,0,13.2-4.55,25.32-12.15,34.92,37.45,40.27,74.89,80.54,112.34,120.81V110.58Z"/></svg></span>
+        <span class="nankin-word" style="font-size: 48px;">nankin</span>
+      </div>
+      <div class="lbl">Horizontal</div>
+    </div>
+    <div class="lockup-card" style="min-height: 260px;">
+      <div class="lockup-v">
+        <span class="symbol"><svg viewBox="0 0 313.03 314.99" width="80" height="80" fill="currentColor"><path d="M100.19,159.25c0-13.73,4.92-26.3,13.08-36.08-.06-.06-.11-.12-.17-.18C75.4,81.99,37.7,41,0,0v206.68c38.34,36.1,76.67,72.2,115.01,108.3h69.08v-106.63c-8.15,4.59-17.56,7.22-27.58,7.22-31.11,0-56.33-25.22-56.33-56.33Z"/><path d="M313.03,110.58C274.76,73.72,236.49,36.86,198.21,0h-69.27v110.13c8.15-4.59,17.56-7.22,27.58-7.22,31.11,0,56.33,25.22,56.33,56.33,0,13.2-4.55,25.32-12.15,34.92,37.45,40.27,74.89,80.54,112.34,120.81V110.58Z"/></svg></span>
+        <span class="nankin-word" style="font-size: 36px;">nankin</span>
+      </div>
+      <div class="lbl">Vertical</div>
+    </div>
+  </div>
+
+  <h2 class="nk-h2">Margem de segurança</h2>
+  <p class="nk-body">Conserve um espaço limpo ao redor do logo para preservar legibilidade. <strong>A margem mínima é igual à altura da letra "A" do nome Nankin.</strong></p>
+  <div class="specbox" style="display: flex; align-items: center; justify-content: center; padding: 80px;">
+    <div style="position: relative; padding: 56px;">
+      <div style="position: absolute; inset: 0; border: 1px dashed var(--nk-coral); border-radius: 4px;"></div>
+      <span class="nankin-word" style="font-size: 56px;">nankin</span>
+      <span style="position: absolute; left: -40px; top: 56px; font-family: var(--font-mono); font-size: 11px; color: var(--nk-coral);">= A</span>
+      <span style="position: absolute; right: -40px; top: 56px; font-family: var(--font-mono); font-size: 11px; color: var(--nk-coral);">= A</span>
+      <span style="position: absolute; left: 56px; top: -28px; font-family: var(--font-mono); font-size: 11px; color: var(--nk-coral);">= A</span>
+      <span style="position: absolute; left: 56px; bottom: -28px; font-family: var(--font-mono); font-size: 11px; color: var(--nk-coral);">= A</span>
     </div>
   </div>
 
   <h2 class="nk-h2">Tamanho mínimo</h2>
-  <div class="nk-card" style="padding: 32px; display: flex; align-items: flex-end; gap: 48px;">
-    <div style="text-align: center;">
-      <img src="../../assets/logo-nankin-wordmark.svg" style="width: 140px;">
-      <p class="nk-meta" style="margin-top: 16px;">Wordmark · 140px de largura</p>
+  <div class="specbox" style="display: flex; align-items: center; justify-content: space-between; padding: 56px;">
+    <div class="lockup-h" style="background: #fff; padding: 24px; border-radius: var(--r-sm);">
+      <span class="symbol"><svg viewBox="0 0 313.03 314.99" width="32" height="32" fill="currentColor"><path d="M100.19,159.25c0-13.73,4.92-26.3,13.08-36.08-.06-.06-.11-.12-.17-.18C75.4,81.99,37.7,41,0,0v206.68c38.34,36.1,76.67,72.2,115.01,108.3h69.08v-106.63c-8.15,4.59-17.56,7.22-27.58,7.22-31.11,0-56.33-25.22-56.33-56.33Z"/><path d="M313.03,110.58C274.76,73.72,236.49,36.86,198.21,0h-69.27v110.13c8.15-4.59,17.56-7.22,27.58-7.22,31.11,0,56.33,25.22,56.33,56.33,0,13.2-4.55,25.32-12.15,34.92,37.45,40.27,74.89,80.54,112.34,120.81V110.58Z"/></svg></span>
+      <span class="nankin-word" style="font-size: 24px;">nankin</span>
     </div>
-    <div style="text-align: center;">
-      <img src="../../assets/icon-nankin.svg" style="width: 24px;">
-      <p class="nk-meta" style="margin-top: 16px;">Símbolo · 24px</p>
+    <div style="text-align: right;">
+      <div style="font-family: var(--font-display); font-size: 56px; font-weight: 700; line-height: 1; color: var(--nk-coral);">140px</div>
+      <p style="margin: 12px 0 0; font-size: 13px; color: var(--fg-muted); max-width: 32ch;">Largura mínima da versão horizontal. Abaixo disso, prefira o isotipo.</p>
     </div>
   </div>
-  <p class="nk-meta" style="margin-top: 12px;">Abaixo desses tamanhos, a marca perde definição. Em mídia impressa, escale proporcionalmente para a resolução.</p>
 
-  <h2 class="nk-h2">Safe area</h2>
-  <div class="nk-card" style="padding: 32px;">
-    <div style="position: relative; display: inline-block; padding: 24px; outline: 1px dashed var(--nk-coral); outline-offset: 0;">
-      <img src="../../assets/logo-nankin-wordmark.svg" style="width: 180px; display:block;">
-    </div>
-    <p class="nk-meta" style="margin-top: 16px;">Safe area = altura da letra "n" (X-height). Nada — texto, foto, borda — entra nesse espaço.</p>
-  </div>
-
-  <h2 class="nk-h2">Não faça</h2>
+  <h2 class="nk-h2">Versões de aplicação</h2>
+  <p class="nk-body">O logo deve sempre estar sobre a paleta Nankin. Em comunicação de terceiros, use cor sólida, foto ou vídeo que permita legibilidade.</p>
   <div class="nk-grid nk-grid--3" style="margin-top: 16px;">
-    <div class="nk-card" style="padding: 24px; border-color: var(--nk-error);">
-      <div style="background: linear-gradient(45deg, #f00, #00f); padding: 16px; border-radius: 4px; text-align: center;">
-        <img src="../../assets/logo-nankin-wordmark.svg" style="width: 100px; filter: brightness(0) invert(1);">
-      </div>
-      <p style="font-size: 13px; margin-top: 12px; color: var(--nk-error);">Não usar sobre gradiente.</p>
-    </div>
-    <div class="nk-card" style="padding: 24px; border-color: var(--nk-error);">
-      <img src="../../assets/logo-nankin-wordmark.svg" style="width: 80px; transform: rotate(-8deg); display:block; margin: 16px auto;">
-      <p style="font-size: 13px; margin-top: 12px; color: var(--nk-error);">Não rotacionar nem distorcer.</p>
-    </div>
-    <div class="nk-card" style="padding: 24px; border-color: var(--nk-error);">
-      <div style="font-family: serif; font-size: 28px; font-weight: 700; text-align: center; padding: 24px 0;">Nankin</div>
-      <p style="font-size: 13px; margin-top: 12px; color: var(--nk-error);">Nunca substituir o wordmark por outra fonte.</p>
-    </div>
+    <div class="lockup-card"><img src="../assets/logo-completo-black-on-white.png" alt="Positivo sobre branco" style="max-width: 220px; width: 100%; height: auto;"><div class="lbl">Positivo · branco</div></div>
+    <div class="lockup-card coral"><img src="../assets/logo-completo-coral.png" alt="Sobre coral" style="max-width: 220px; width: 100%; height: auto; filter: brightness(0);"><div class="lbl">Positivo · coral</div></div>
+    <div class="lockup-card"><img src="../assets/logo-completo-coral-on-white.png" alt="Coral sobre branco" style="max-width: 220px; width: 100%; height: auto;"><div class="lbl">Coral · sobre branco</div></div>
+    <div class="lockup-card dark"><img src="../assets/logo-completo-white-on-black.png" alt="Negativo sobre preto" style="max-width: 220px; width: 100%; height: auto;"><div class="lbl">Negativo · preto</div></div>
+    <div class="lockup-card coral"><img src="../assets/logo-completo-white-on-black.png" alt="Negativo sobre coral" style="max-width: 220px; width: 100%; height: auto;"><div class="lbl">Negativo · coral</div></div>
+    <div class="lockup-card" style="background: linear-gradient(135deg, #555, #222);"><img src="../assets/logo-completo-white-on-black.png" alt="Negativo sobre imagem" style="max-width: 220px; width: 100%; height: auto;"><div class="lbl" style="color: rgba(255,255,255,0.7);">Negativo · imagem</div></div>
   </div>
 
   <h2 class="nk-h2">Co-branding</h2>
-  <div class="nk-card" style="padding: 48px; display: flex; align-items: center; justify-content: center; gap: 32px;">
-    <img src="../../assets/logo-nankin-wordmark.svg" style="width: 100px;">
-    <div style="width: 1px; height: 32px; background: var(--border);"></div>
-    <div style="font-size: 18px; font-weight: 600; color: var(--fg-muted);">Parceiro</div>
+  <p class="nk-body">Em parcerias, o logo Nankin sempre vem antes do logo do parceiro. <strong>A linha divisória tem altura igual a 2× a letra "A"</strong> e o espaçamento de cada lado é igual à largura da letra "A".</p>
+  <div class="specbox" style="display: flex; align-items: center; justify-content: center; padding: 64px; gap: 32px;">
+    <span class="nankin-word" style="font-size: 40px;">nankin</span>
+    <div style="width: 1px; height: 56px; background: var(--nk-coral);"></div>
+    <span style="font-family: var(--font-text); font-size: 14px; color: var(--fg-subtle); letter-spacing: var(--tr-mega); text-transform: uppercase;">Logo parceiro</span>
   </div>
-  <p class="nk-meta" style="margin-top: 12px;">Nankin sempre à esquerda. Separador é barra vertical da altura do "n". Espaço entre marcas = 2× safe area.</p>
-    
+  <ul class="nk-body" style="margin-top: 12px;">
+    <li>Para novos produtos ou serviços em conjunto</li>
+    <li>Para conteúdo com autoria compartilhada</li>
+    <li>Para eventos com host em conjunto</li>
+    <li>Para campanhas e ativações patrocinadas entre Nankin e parceiro</li>
+  </ul>
+
+  <h2 class="nk-h2">Usos incorretos</h2>
+  <p class="nk-body">O logo nunca deve ser distorcido, inclinado ou ter proporções alteradas. Não use efeitos como sombras, brilhos ou gradientes. Não troque cores originais. Não insira em formas, molduras ou elementos que descaracterizem a identidade.</p>
+  <div class="nk-grid nk-grid--3" style="margin-top: 16px;">
+    <div class="dont-card"><div style="filter: drop-shadow(4px 4px 0 #FE6E60);"><span class="nankin-word" style="font-size: 28px;">nankin</span></div><div class="desc">Não usar sombras ou efeitos</div><div class="marker">✗</div></div>
+    <div class="dont-card"><div style="background: linear-gradient(90deg, #FE6E60, #C8443A); -webkit-background-clip: text; background-clip: text; color: transparent;"><span class="nankin-word" style="font-size: 28px;">nankin</span></div><div class="desc">Não usar gradientes</div><div class="marker">✗</div></div>
+    <div class="dont-card"><span class="nankin-word" style="font-size: 28px; color: #2E8B6B;">nankin</span><div class="desc">Não alterar a cor</div><div class="marker">✗</div></div>
+    <div class="dont-card"><span style="font-family: 'Times New Roman', serif; font-weight: 700; font-size: 28px;">nankin</span><div class="desc">Não alterar a tipografia</div><div class="marker">✗</div></div>
+    <div class="dont-card"><span class="nankin-word" style="font-size: 28px; transform: skewX(-12deg); display: inline-block;">nankin</span><div class="desc">Não distorcer ou inclinar</div><div class="marker">✗</div></div>
+    <div class="dont-card"><span class="nankin-word" style="font-size: 28px; transform: rotate(-90deg); display: inline-block;">nankin</span><div class="desc">Não usar em outra direção</div><div class="marker">✗</div></div>
+    <div class="dont-card" style="background: linear-gradient(135deg, #888, #aaa);"><span class="nankin-word" style="font-size: 28px; color: #999;">nankin</span><div class="desc" style="color: #fff;">Não colocar sobre fundo de baixo contraste</div><div class="marker">✗</div></div>
+    <div class="dont-card"><div style="background: url('https://placeholder.com/80x40') center/cover; padding: 8px 16px;"><span class="nankin-word" style="font-size: 28px;">nankin</span></div><div class="desc">Não usar texturas ou imagens dentro do logo</div><div class="marker">✗</div></div>
+    <div class="dont-card"><div style="border: 4px double var(--fg); padding: 12px 24px; border-radius: 50%;"><span class="nankin-word" style="font-size: 24px;">nankin</span></div><div class="desc">Não inserir em molduras ou formas</div><div class="marker">✗</div></div>
+  </div>
+
   <div class="nk-footer">
     <a href="architecture.html">← Arquitetura</a>
     <a href="color.html">Cores →</a>

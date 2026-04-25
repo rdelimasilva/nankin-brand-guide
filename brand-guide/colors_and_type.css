@@ -1,93 +1,91 @@
 /* ============================================================
    NANKIN · Design Tokens
-   Colors + type — single source of truth.
-   Derived from "Manual de Identidade Nankin" (PDF).
+   Cores + tipo — única fonte de verdade.
+   Derivado do "Manual de Identidade Nankin" (PDF oficial).
    ============================================================ */
 
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+/* ---------- Tipografia oficial (Manual p.16-17) ----------
+   • Plus Jakarta Sans — títulos, subtítulos, botões, corpo,
+     labels (Regular / Medium / SemiBold / Bold + itálicos)
+   • Nobel Uno — display editorial: heros, capas, aberturas
+     (16 pesos: Thin → Black, com itálicos)
+   • JetBrains Mono — apenas código/tokens auditáveis. */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
 
-/* ---------- Nobel Uno — the Nankin typeface ----------
-   Nobel Uno is the official brand typeface and is used everywhere:
-   wordmark, display, body, UI, labels. Full weight range loaded
-   from /fonts (Thin → Black, with matching italics). */
-@font-face { font-family: "Nobel Uno"; font-weight: 100; font-style: normal; src: url("fonts/NobelUno-Thin.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 100; font-style: italic; src: url("fonts/NobelUno-ThinItalic.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 200; font-style: normal; src: url("fonts/NobelUno-ExtraLight.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 200; font-style: italic; src: url("fonts/NobelUno-ExtraLightItalic.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 300; font-style: normal; src: url("fonts/NobelUno-Light.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 300; font-style: italic; src: url("fonts/NobelUno-LightItalic.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 400; font-style: normal; src: url("fonts/NobelUno-Regular.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 400; font-style: italic; src: url("fonts/NobelUno-Italic.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 500; font-style: normal; src: url("fonts/NobelUno-Medium.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 500; font-style: italic; src: url("fonts/NobelUno-MediumItalic.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 600; font-style: normal; src: url("fonts/NobelUno-SemiBold.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 600; font-style: italic; src: url("fonts/NobelUno-SemiBoldItalic.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 700; font-style: normal; src: url("fonts/NobelUno-Bold.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 700; font-style: italic; src: url("fonts/NobelUno-BoldItalic.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 900; font-style: normal; src: url("fonts/NobelUno-Black.otf") format("opentype"); font-display: swap; }
-@font-face { font-family: "Nobel Uno"; font-weight: 900; font-style: italic; src: url("fonts/NobelUno-BlackItalic.otf") format("opentype"); font-display: swap; }
+/* Nobel Uno · display editorial — 16 arquivos locais em /fonts */
+@font-face { font-family: "Nobel Uno"; font-weight: 100; font-style: normal;  src: url("fonts/NobelUno-Thin.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 100; font-style: italic;  src: url("fonts/NobelUno-ThinItalic.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 200; font-style: normal;  src: url("fonts/NobelUno-ExtraLight.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 200; font-style: italic;  src: url("fonts/NobelUno-ExtraLightItalic.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 300; font-style: normal;  src: url("fonts/NobelUno-Light.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 300; font-style: italic;  src: url("fonts/NobelUno-LightItalic.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 400; font-style: normal;  src: url("fonts/NobelUno-Regular.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 400; font-style: italic;  src: url("fonts/NobelUno-Italic.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 500; font-style: normal;  src: url("fonts/NobelUno-Medium.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 500; font-style: italic;  src: url("fonts/NobelUno-MediumItalic.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 600; font-style: normal;  src: url("fonts/NobelUno-SemiBold.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 600; font-style: italic;  src: url("fonts/NobelUno-SemiBoldItalic.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 700; font-style: normal;  src: url("fonts/NobelUno-Bold.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 700; font-style: italic;  src: url("fonts/NobelUno-BoldItalic.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 900; font-style: normal;  src: url("fonts/NobelUno-Black.otf") format("opentype"); font-display: swap; }
+@font-face { font-family: "Nobel Uno"; font-weight: 900; font-style: italic;  src: url("fonts/NobelUno-BlackItalic.otf") format("opentype"); font-display: swap; }
 
 :root {
-  /* ---------- BRAND PALETTE (from manual, p.16) ---------- */
-  --nk-coral:    #FE6E60;        /* Coral · brand primary */
-  --nk-black:    #000000;        /* Preto */
-  --nk-gray:     #2E2E2E;        /* Cinza */
-  --nk-gray-light: #F5F5F5;      /* Cinza-claro */
-  --nk-white:    #FFFFFF;        /* Branco */
+  /* ---------- PALETA OFICIAL (Manual p.16) ---------- */
+  --nk-coral:      #FE6E60;   /* Coral · primária / acento */
+  --nk-black:      #000000;   /* Preto */
+  --nk-gray:       #2E2E2E;   /* Cinza */
+  --nk-gray-light: #F5F5F5;   /* Cinza-claro */
+  --nk-white:      #FFFFFF;   /* Branco */
 
-  /* Working scale derived from the 5 official tones — use the
-     officials wherever possible. These extras (250–550) only fill
-     the gaps for borders, dividers, muted text. */
+  /* Escala de trabalho derivada — só pra borders, dividers, texto muted.
+     Não usar como cor "principal". */
   --nk-coral-soft: #FFD9D3;
   --nk-coral-deep: #E54E40;
-  --nk-ink-100:  #E5E5E5;
-  --nk-ink-200:  #CCCCCC;
-  --nk-ink-300:  #9A9A9A;
-  --nk-ink-400:  #6B6B6B;
-  --nk-ink-500:  #474747;
+  --nk-ink-100:    #E5E5E5;
+  --nk-ink-200:    #CCCCCC;
+  --nk-ink-300:    #9A9A9A;
+  --nk-ink-400:    #6B6B6B;
+  --nk-ink-500:    #474747;
 
-  /* ---------- SEMANTIC ----------
-     Quiet, never compete with coral. */
+  /* ---------- SEMÂNTICAS ----------
+     Quietas, nunca competem com coral. */
   --nk-success: #2E8B6B;
   --nk-warn:    #D89B2A;
   --nk-error:   #C8443A;
   --nk-info:    #3D6BB3;
 
-  /* ---------- FOREGROUND / BACKGROUND TOKENS ---------- */
+  /* ---------- FOREGROUND / BACKGROUND ---------- */
   --bg:        var(--nk-white);
   --bg-alt:    var(--nk-gray-light);
   --bg-invert: var(--nk-black);
   --bg-brand:  var(--nk-coral);
 
-  --fg:        var(--nk-black);     /* primary type */
-  --fg-muted:  var(--nk-gray);      /* secondary type */
-  --fg-subtle: var(--nk-ink-400);   /* tertiary, captions */
-  --fg-on-coral: var(--nk-white);   /* white on coral, per manual examples */
+  --fg:        var(--nk-black);
+  --fg-muted:  var(--nk-gray);
+  --fg-subtle: var(--nk-ink-400);
+  --fg-on-coral: var(--nk-white);
   --fg-on-dark:  var(--nk-white);
 
   --border:        var(--nk-ink-100);
   --border-strong: var(--nk-ink-200);
 
-  /* ---------- TYPE FAMILIES ----------
-     Nobel Uno is the official Nankin typeface — used everywhere:
-     wordmark, display, headlines, body, UI, labels. The full
-     family is loaded via @font-face above (Thin → Black, italics).
-     JetBrains Mono is used for code-adjacent contexts only. */
-  --font-display:    "Nobel Uno", system-ui, sans-serif;
-  --font-text:       "Nobel Uno", system-ui, sans-serif;
-  --font-mono:       "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
-  --font-wordmark:   "Nobel Uno", system-ui, sans-serif;
+  /* ---------- FAMÍLIAS ---------- */
+  --font-display:  "Nobel Uno", "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-text:     "Plus Jakarta Sans", system-ui, sans-serif;
+  --font-mono:     "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  --font-wordmark: "Plus Jakarta Sans", system-ui, sans-serif; /* legado — NÃO use para o wordmark; o wordmark oficial é o SVG em assets/logo-nankin-wordmark.svg */
 
-  /* ---------- TYPE SCALE (from manual, p.17) ----------
-     Manual specifies 30/25/20/16 pt with line-heights 43/37.5/30/24.
-     We anchor on 16px body and scale upward. */
+  /* ---------- ESCALA TIPOGRÁFICA (Manual p.17) ----------
+     Manual define: 30/25/20/16 pt com line-height 43/37.5/30/24.
+     Multiplicador para tamanhos maiores: ×1.2 (regra do manual). */
   --fs-xs:   12px;
   --fs-sm:   14px;
-  --fs-base: 16px;   /* body */
+  --fs-base: 16px;
   --fs-md:   18px;
-  --fs-lg:   20px;   /* title-3 */
-  --fs-xl:   25px;   /* title-2 */
-  --fs-2xl:  30px;   /* title-1 */
+  --fs-lg:   20px;   /* title-3 (manual) */
+  --fs-xl:   25px;   /* title-2 (manual) */
+  --fs-2xl:  30px;   /* title-1 (manual) */
   --fs-3xl:  44px;
   --fs-4xl:  60px;
   --fs-5xl:  84px;
@@ -95,7 +93,7 @@
 
   --lh-tight:  1.05;
   --lh-snug:   1.2;
-  --lh-normal: 1.5;   /* manual: lh = fs × 1.5 */
+  --lh-normal: 1.5;
   --lh-loose:  1.6;
 
   --tr-tight:  -0.02em;
@@ -103,30 +101,16 @@
   --tr-normal: 0;
   --tr-wide:   0.04em;
   --tr-mega:   0.12em;
-  --tr-label:  0.16em;  /* manual: label uses extra spacing */
+  --tr-label:  0.16em;
 
-  /* ---------- SPACING (4px base) ---------- */
-  --sp-1:  4px;
-  --sp-2:  8px;
-  --sp-3:  12px;
-  --sp-4:  16px;
-  --sp-5:  24px;
-  --sp-6:  32px;
-  --sp-7:  48px;
-  --sp-8:  64px;
-  --sp-9:  96px;
-  --sp-10: 128px;
+  /* ---------- ESPAÇAMENTO (4px base) ---------- */
+  --sp-1: 4px; --sp-2: 8px; --sp-3: 12px; --sp-4: 16px; --sp-5: 24px;
+  --sp-6: 32px; --sp-7: 48px; --sp-8: 64px; --sp-9: 96px; --sp-10: 128px;
 
-  /* ---------- RADII ----------
-     Geometric, confident. UI radii small. */
-  --r-0:   0;
-  --r-sm:  4px;
-  --r-md:  8px;
-  --r-lg:  12px;
-  --r-xl:  20px;
-  --r-pill: 999px;
+  /* ---------- RAIOS ---------- */
+  --r-0: 0; --r-sm: 4px; --r-md: 8px; --r-lg: 12px; --r-xl: 20px; --r-pill: 999px;
 
-  /* ---------- SHADOWS ---------- */
+  /* ---------- SOMBRAS ---------- */
   --shadow-1: 0 1px 2px rgba(0,0,0,0.06);
   --shadow-2: 0 6px 16px -6px rgba(0,0,0,0.10);
   --shadow-3: 0 24px 48px -16px rgba(0,0,0,0.14);
@@ -136,16 +120,13 @@
   --ease-out:  cubic-bezier(0.2, 0.7, 0.2, 1);
   --ease-in:   cubic-bezier(0.6, 0, 0.8, 0.4);
   --ease-std:  cubic-bezier(0.4, 0.0, 0.2, 1);
-  --dur-1: 120ms;
-  --dur-2: 200ms;
-  --dur-3: 320ms;
-  --dur-4: 520ms;
+  --dur-1: 120ms; --dur-2: 200ms; --dur-3: 320ms; --dur-4: 520ms;
 
-  /* ---------- BRAND CONSTANTS (from manual) ---------- */
-  --nk-logo-min-width: 140px;     /* p.5 */
+  /* ---------- CONSTANTES DA MARCA (Manual p.5, p.11) ---------- */
+  --nk-logo-min-width: 140px;
 }
 
-/* ===== Base reset + page ===== */
+/* ===== Reset base ===== */
 html, body {
   margin: 0;
   background: var(--bg);
@@ -157,7 +138,8 @@ html, body {
   text-rendering: optimizeLegibility;
 }
 
-/* ===== Semantic typography ===== */
+/* ===== Tipografia semântica =====
+   Manual p.17: title-1 = 30, title-2 = 25, title-3 = 20, body = 16. */
 .nk-display {
   font-family: var(--font-display);
   font-weight: 700;
@@ -166,29 +148,27 @@ html, body {
   letter-spacing: var(--tr-tight);
   color: var(--fg);
 }
-
-/* Manual scale: title-1 = 30, title-2 = 25, title-3 = 20, body = 16 */
 h1, .nk-h1 {
   font-family: var(--font-display);
   font-weight: 700;
-  font-size: var(--fs-2xl);   /* 30 */
-  line-height: 1.43;          /* 43/30 */
+  font-size: var(--fs-2xl);
+  line-height: 1.43;
   letter-spacing: var(--tr-snug);
   margin: 0;
 }
 h2, .nk-h2 {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: var(--fs-xl);    /* 25 */
-  line-height: 1.5;           /* 37.5/25 */
+  font-size: var(--fs-xl);
+  line-height: 1.5;
   letter-spacing: var(--tr-snug);
   margin: 0;
 }
 h3, .nk-h3 {
   font-family: var(--font-display);
   font-weight: 600;
-  font-size: var(--fs-lg);    /* 20 */
-  line-height: 1.5;           /* 30/20 */
+  font-size: var(--fs-lg);
+  line-height: 1.5;
   margin: 0;
 }
 h4, .nk-h4 {
@@ -198,34 +178,24 @@ h4, .nk-h4 {
   line-height: 1.4;
   margin: 0;
 }
-
 p, .nk-body {
   font-family: var(--font-text);
-  font-size: var(--fs-base);  /* 16 */
-  line-height: 1.5;            /* 24/16 */
+  font-size: var(--fs-base);
+  line-height: 1.5;
   color: var(--fg);
   margin: 0;
 }
 .nk-lead {
   font-family: var(--font-text);
   font-weight: 500;
-  font-size: var(--fs-xl);    /* 25 */
+  font-size: var(--fs-xl);
   line-height: 1.5;
   color: var(--fg);
 }
-.nk-small {
-  font-family: var(--font-text);
-  font-size: var(--fs-sm);
-  color: var(--fg-muted);
-}
-.nk-caption {
-  font-family: var(--font-text);
-  font-size: var(--fs-xs);
-  color: var(--fg-subtle);
-  letter-spacing: var(--tr-wide);
-}
+.nk-small { font-family: var(--font-text); font-size: var(--fs-sm); color: var(--fg-muted); }
+.nk-caption { font-family: var(--font-text); font-size: var(--fs-xs); color: var(--fg-subtle); letter-spacing: var(--tr-wide); }
 
-/* Label · per manual: "ISTO É UMA LABEL" — 20pt, lh 45, spacing 10 */
+/* Label · Manual p.17: "ISTO É UMA LABEL" — 20pt, lh 45, spacing 10 */
 .nk-label {
   font-family: var(--font-text);
   font-weight: 600;
@@ -260,13 +230,10 @@ a, .nk-link {
   transition: color var(--dur-1) var(--ease-out);
 }
 a:hover, .nk-link:hover { color: var(--nk-coral); }
-
-/* Selection uses brand */
 ::selection { background: var(--nk-coral); color: var(--nk-white); }
 
-/* Wordmark utility — use only for logo lockups */
 .nk-wordmark {
   font-family: var(--font-wordmark);
-  font-weight: 700;
+  font-weight: 800;
   letter-spacing: -0.04em;
 }

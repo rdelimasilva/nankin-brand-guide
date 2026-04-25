@@ -5,159 +5,104 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Nankin · Tipografia</title>
 <link rel="stylesheet" href="../_shell.css">
-
+<style>
+  .specimen { padding: 48px; background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); }
+  .weight-row { display: grid; grid-template-columns: 200px 1fr; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: baseline; }
+  .weight-row .lbl { font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); }
+  .scale-row { padding: 24px; display: grid; grid-template-columns: 220px 1fr; gap: 16px; align-items: baseline; background: #fff; border: 1px solid var(--border); border-radius: var(--r-md); }
+  .scale-row .meta { font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted); }
+</style>
 </head>
 <body data-page="b-typography">
+
 <div class="nk-hero">
-  <div class="nk-eyebrow">F4 · Marca · Tipografia</div>
+  <div class="nk-eyebrow">B4 · Marca · Tipografia</div>
   <div class="nk-hero__rule"></div>
-  <h1 class="nk-h1">Uma fonte <em>para tudo.</em></h1>
-  <p class="nk-lede">Nobel Uno é a fonte oficial Nankin — do thin ao black, com itálicos. Ela carrega wordmark, headline, body, UI e label.</p>
+  <h1 class="nk-h1">Plus Jakarta Sans <em>+ Nobel Uno.</em></h1>
+  <p class="nk-lede">Duas famílias trabalham juntas. Plus Jakarta Sans carrega títulos do produto, subtítulos, botões, corpo e labels. Nobel Uno aparece em títulos de maior evidência: heros, capas de deck e aberturas editoriais.</p>
 </div>
+
 <div class="nk-page">
 
-  <h2 class="nk-h2">Specimen</h2>
-  <div class="nk-card" style="padding: 48px;">
-    <div style="font-family: 'Nobel Uno', sans-serif; font-size: 120px; line-height: 1; letter-spacing: -0.03em; font-weight: 700; margin: 0;">nankin</div>
-    <div class="nk-eyebrow" style="margin-top: 24px;">Nobel Uno · Bold · 120pt · -0.03em</div>
+  <h2 class="nk-h2">Plus Jakarta Sans</h2>
+  <p class="nk-body">Sans-serif geométrica e contemporânea. Usada em títulos do produto, subtítulos, botões, corpo de texto e labels — incluindo as versões itálicas em todos os pesos disponíveis.</p>
+  <div class="specimen" style="margin-top: 16px;">
+    <div style="font-family: 'Plus Jakarta Sans'; font-weight: 800; font-size: 120px; line-height: 1; letter-spacing: -0.04em;">Aa</div>
+    <div class="nk-eyebrow" style="margin-top: 16px;">Plus Jakarta Sans · ExtraBold · 120pt</div>
   </div>
 
-  <h2 class="nk-h2">Pesos disponíveis</h2>
-  <div style="display: grid; gap: 8px; margin-top: 16px;">
-    
-      <div style="display: grid; grid-template-columns: 120px 1fr; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: baseline;">
-        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">100 · Thin</span>
-        <span style="font-family: 'Nobel Uno'; font-weight: 100; font-size: 28px; letter-spacing: -0.02em;">Gestão eficiente para arquitetos</span>
-      </div>
-    
-      <div style="display: grid; grid-template-columns: 120px 1fr; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: baseline;">
-        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">200 · ExtraLight</span>
-        <span style="font-family: 'Nobel Uno'; font-weight: 200; font-size: 28px; letter-spacing: -0.02em;">Gestão eficiente para arquitetos</span>
-      </div>
-    
-      <div style="display: grid; grid-template-columns: 120px 1fr; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: baseline;">
-        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">300 · Light</span>
-        <span style="font-family: 'Nobel Uno'; font-weight: 300; font-size: 28px; letter-spacing: -0.02em;">Gestão eficiente para arquitetos</span>
-      </div>
-    
-      <div style="display: grid; grid-template-columns: 120px 1fr; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: baseline;">
-        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">400 · Regular</span>
-        <span style="font-family: 'Nobel Uno'; font-weight: 400; font-size: 28px; letter-spacing: -0.02em;">Gestão eficiente para arquitetos</span>
-      </div>
-    
-      <div style="display: grid; grid-template-columns: 120px 1fr; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: baseline;">
-        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">500 · Medium</span>
-        <span style="font-family: 'Nobel Uno'; font-weight: 500; font-size: 28px; letter-spacing: -0.02em;">Gestão eficiente para arquitetos</span>
-      </div>
-    
-      <div style="display: grid; grid-template-columns: 120px 1fr; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: baseline;">
-        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">600 · SemiBold</span>
-        <span style="font-family: 'Nobel Uno'; font-weight: 600; font-size: 28px; letter-spacing: -0.02em;">Gestão eficiente para arquitetos</span>
-      </div>
-    
-      <div style="display: grid; grid-template-columns: 120px 1fr; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: baseline;">
-        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">700 · Bold</span>
-        <span style="font-family: 'Nobel Uno'; font-weight: 700; font-size: 28px; letter-spacing: -0.02em;">Gestão eficiente para arquitetos</span>
-      </div>
-    
-      <div style="display: grid; grid-template-columns: 120px 1fr; padding: 14px 0; border-bottom: 1px solid var(--border); align-items: baseline;">
-        <span style="font-family: var(--font-mono); font-size: 11px; color: var(--fg-muted);">900 · Black</span>
-        <span style="font-family: 'Nobel Uno'; font-weight: 900; font-size: 28px; letter-spacing: -0.02em;">Gestão eficiente para arquitetos</span>
-      </div>
-    
+  <h3 class="nk-h3" style="margin-top: 32px;">Pesos disponíveis</h3>
+  <div style="margin-top: 12px;">
+    <div class="weight-row"><span class="lbl">400 · Regular</span><span style="font-family: 'Plus Jakarta Sans'; font-weight: 400; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">500 · Medium</span><span style="font-family: 'Plus Jakarta Sans'; font-weight: 500; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">600 · SemiBold</span><span style="font-family: 'Plus Jakarta Sans'; font-weight: 600; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">700 · Bold</span><span style="font-family: 'Plus Jakarta Sans'; font-weight: 700; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">600 · Italic</span><span style="font-family: 'Plus Jakarta Sans'; font-weight: 600; font-style: italic; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
   </div>
 
-  <h2 class="nk-h2">Itálico</h2>
-  <div class="nk-card" style="padding: 32px;">
-    <div style="font-family: 'Nobel Uno'; font-style: italic; font-weight: 700; font-size: 48px; letter-spacing: -0.025em; line-height: 1.1;">para arquitetos.</div>
-    <p class="nk-meta" style="margin-top: 24px;">Itálico é decisão de marca. Use para enfatizar palavras-chave em headline. Quase sempre coral.</p>
+  <h2 class="nk-h2">Nobel Uno</h2>
+  <p class="nk-body">Tipografia editorial. Usada em títulos de maior evidência e em aberturas — capa de deck, hero, abertura de seção. Disponível em 8 pesos do Thin ao Black, todos com versão itálica.</p>
+  <div class="specimen" style="margin-top: 16px;">
+    <div style="font-family: 'Nobel Uno', serif; font-weight: 700; font-size: 120px; line-height: 1; letter-spacing: -0.03em;">Aa</div>
+    <div class="nk-eyebrow" style="margin-top: 16px;">Nobel Uno · Bold · 120pt</div>
   </div>
 
-  <h2 class="nk-h2">Escala</h2>
+  <h3 class="nk-h3" style="margin-top: 32px;">Pesos disponíveis</h3>
+  <div style="margin-top: 12px;">
+    <div class="weight-row"><span class="lbl">100 · Thin</span><span style="font-family: 'Nobel Uno', serif; font-weight: 100; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">200 · ExtraLight</span><span style="font-family: 'Nobel Uno', serif; font-weight: 200; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">300 · Light</span><span style="font-family: 'Nobel Uno', serif; font-weight: 300; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">400 · Regular</span><span style="font-family: 'Nobel Uno', serif; font-weight: 400; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">500 · Medium</span><span style="font-family: 'Nobel Uno', serif; font-weight: 500; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">600 · SemiBold</span><span style="font-family: 'Nobel Uno', serif; font-weight: 600; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">700 · Bold</span><span style="font-family: 'Nobel Uno', serif; font-weight: 700; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">900 · Black</span><span style="font-family: 'Nobel Uno', serif; font-weight: 900; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+    <div class="weight-row"><span class="lbl">700 · Bold Italic</span><span style="font-family: 'Nobel Uno', serif; font-weight: 700; font-style: italic; font-size: 28px;">Gestão eficiente para arquitetos</span></div>
+  </div>
+
+  <h2 class="nk-h2">Escala (Manual p.17)</h2>
+  <p class="nk-body">Para tamanhos maiores que o título-1, multiplique o tamanho atual por 1.2. Entre-linha = tamanho × 1.5.</p>
   <div style="display: grid; gap: 16px; margin-top: 16px;">
-    
-      <div class="nk-card" style="padding: 24px; display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: baseline;">
-        <div>
-          <div class="nk-eyebrow">Display</div>
-          <div style="font-family: var(--font-mono); font-size: 11px; margin-top: 4px;">84px / 126px</div>
-          <div style="font-size: 12px; color: var(--fg-muted); margin-top: 6px;">Hero, capa de deck</div>
-        </div>
-        <div style="font-family: 'Nobel Uno'; font-size: 84px; line-height: 1.3; letter-spacing: -0.02em;">Sua planilha vira plataforma</div>
-      </div>
-    
-      <div class="nk-card" style="padding: 24px; display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: baseline;">
-        <div>
-          <div class="nk-eyebrow">Title-1</div>
-          <div style="font-family: var(--font-mono); font-size: 11px; margin-top: 4px;">30px / 45px</div>
-          <div style="font-size: 12px; color: var(--fg-muted); margin-top: 6px;">Seção principal</div>
-        </div>
-        <div style="font-family: 'Nobel Uno'; font-size: 30px; line-height: 1.3; letter-spacing: -0.02em;">Sua planilha vira plataforma</div>
-      </div>
-    
-      <div class="nk-card" style="padding: 24px; display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: baseline;">
-        <div>
-          <div class="nk-eyebrow">Title-2</div>
-          <div style="font-family: var(--font-mono); font-size: 11px; margin-top: 4px;">25px / 38px</div>
-          <div style="font-size: 12px; color: var(--fg-muted); margin-top: 6px;">Seção secundária</div>
-        </div>
-        <div style="font-family: 'Nobel Uno'; font-size: 25px; line-height: 1.3; letter-spacing: 0;">Sua planilha vira plataforma</div>
-      </div>
-    
-      <div class="nk-card" style="padding: 24px; display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: baseline;">
-        <div>
-          <div class="nk-eyebrow">Title-3</div>
-          <div style="font-family: var(--font-mono); font-size: 11px; margin-top: 4px;">20px / 30px</div>
-          <div style="font-size: 12px; color: var(--fg-muted); margin-top: 6px;">Sub-seção</div>
-        </div>
-        <div style="font-family: 'Nobel Uno'; font-size: 20px; line-height: 1.3; letter-spacing: 0;">Sua planilha vira plataforma</div>
-      </div>
-    
-      <div class="nk-card" style="padding: 24px; display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: baseline;">
-        <div>
-          <div class="nk-eyebrow">Body</div>
-          <div style="font-family: var(--font-mono); font-size: 11px; margin-top: 4px;">16px / 24px</div>
-          <div style="font-size: 12px; color: var(--fg-muted); margin-top: 6px;">Parágrafo padrão</div>
-        </div>
-        <div style="font-family: 'Nobel Uno'; font-size: 16px; line-height: 1.3; letter-spacing: 0;">Sua planilha vira plataforma</div>
-      </div>
-    
-      <div class="nk-card" style="padding: 24px; display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: baseline;">
-        <div>
-          <div class="nk-eyebrow">Small</div>
-          <div style="font-family: var(--font-mono); font-size: 11px; margin-top: 4px;">14px / 21px</div>
-          <div style="font-size: 12px; color: var(--fg-muted); margin-top: 6px;">Auxiliar, captions</div>
-        </div>
-        <div style="font-family: 'Nobel Uno'; font-size: 14px; line-height: 1.3; letter-spacing: 0;">Sua planilha vira plataforma</div>
-      </div>
-    
-      <div class="nk-card" style="padding: 24px; display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: baseline;">
-        <div>
-          <div class="nk-eyebrow">Caption</div>
-          <div style="font-family: var(--font-mono); font-size: 11px; margin-top: 4px;">12px / 18px</div>
-          <div style="font-size: 12px; color: var(--fg-muted); margin-top: 6px;">Meta, footer</div>
-        </div>
-        <div style="font-family: 'Nobel Uno'; font-size: 12px; line-height: 1.3; letter-spacing: 0;">Sua planilha vira plataforma</div>
-      </div>
-    
-      <div class="nk-card" style="padding: 24px; display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: baseline;">
-        <div>
-          <div class="nk-eyebrow">Eyebrow</div>
-          <div style="font-family: var(--font-mono); font-size: 11px; margin-top: 4px;">11px / 17px</div>
-          <div style="font-size: 12px; color: var(--fg-muted); margin-top: 6px;">Label, kicker · 0.12em letter-spacing · UPPERCASE</div>
-        </div>
-        <div style="font-family: 'Nobel Uno'; font-size: 11px; line-height: 1.3; letter-spacing: 0.12em; text-transform:uppercase;">Plataforma · Arquitetos</div>
-      </div>
-    
+    <div class="scale-row">
+      <div><div class="nk-eyebrow">Title-1</div><div class="meta">30 pt · entre-linha 43</div></div>
+      <div style="font-family: var(--font-display); font-weight: 700; font-size: 30px; line-height: 1.43;">Nankin é a plataforma completa para escritórios de arquitetura</div>
+    </div>
+    <div class="scale-row">
+      <div><div class="nk-eyebrow">Title-2</div><div class="meta">25 pt · entre-linha 37.5</div></div>
+      <div style="font-family: var(--font-display); font-weight: 600; font-size: 25px; line-height: 1.5;">Nankin é a plataforma completa para escritórios de arquitetura</div>
+    </div>
+    <div class="scale-row">
+      <div><div class="nk-eyebrow">Title-3</div><div class="meta">20 pt · entre-linha 30</div></div>
+      <div style="font-family: var(--font-display); font-weight: 600; font-size: 20px; line-height: 1.5;">Nankin é a plataforma completa para escritórios de arquitetura</div>
+    </div>
+    <div class="scale-row">
+      <div><div class="nk-eyebrow">Body</div><div class="meta">16 pt · entre-linha 24</div></div>
+      <div style="font-family: 'Plus Jakarta Sans'; font-weight: 400; font-size: 16px; line-height: 1.5;">Nankin é a plataforma completa para escritórios de arquitetura, reunindo em um só lugar o controle de projetos, planejamento de tempo, orçamentos e comunicação integrada.</div>
+    </div>
+    <div class="scale-row">
+      <div><div class="nk-eyebrow">Label</div><div class="meta">20 pt · spacing 10</div></div>
+      <div style="font-family: 'Plus Jakarta Sans'; font-weight: 600; font-size: 20px; letter-spacing: 0.16em; text-transform: uppercase;">Isto é uma label</div>
+    </div>
   </div>
 
-  <h2 class="nk-h2">Code</h2>
-  <p class="nk-body">JetBrains Mono é a fonte mono — para código, tokens em tabelas, valores numéricos auditáveis. Nunca para body normal.</p>
+  <h2 class="nk-h2">Quando usar qual</h2>
+  <table style="width:100%; border-collapse:collapse; font-size:14px; margin-top:12px;">
+    <thead><tr><th style="text-align:left; padding:10px 0; border-bottom:1px solid var(--border); font-size:10px; letter-spacing:var(--tr-mega); text-transform:uppercase; color:var(--fg-subtle);">Família</th><th style="text-align:left; padding:10px 0; border-bottom:1px solid var(--border); font-size:10px; letter-spacing:var(--tr-mega); text-transform:uppercase; color:var(--fg-subtle);">Uso</th></tr></thead>
+    <tbody>
+      <tr><td style="padding:14px 16px 14px 0; border-bottom:1px solid var(--border); font-family: 'Nobel Uno', serif; font-size:18px;">Nobel Uno</td><td style="padding:14px 0; border-bottom:1px solid var(--border);">Hero de página, capa de deck, abertura de seção editorial. Onde a marca quer parar e respirar.</td></tr>
+      <tr><td style="padding:14px 16px 14px 0; border-bottom:1px solid var(--border); font-family: 'Plus Jakarta Sans'; font-weight: 600; font-size:18px;">Plus Jakarta Sans</td><td style="padding:14px 0; border-bottom:1px solid var(--border);">Tudo o resto: títulos do produto, subtítulos, botões, corpo, labels, formulários, navegação.</td></tr>
+      <tr><td style="padding:14px 16px 14px 0; font-family: var(--font-mono); font-size:14px;">JetBrains Mono</td><td style="padding:14px 0;">Código, tokens, valores numéricos auditáveis em tabelas.</td></tr>
+    </tbody>
+  </table>
+
+  <h2 class="nk-h2">Exemplo em código</h2>
   <div class="nk-card" style="padding: 24px; font-family: var(--font-mono); background: var(--nk-black); color: var(--nk-coral); margin-top: 12px;">
     <span style="color: var(--fg-subtle);">// tokens.css</span><br>
-    <span style="color: rgba(255,255,255,0.85);">--nk-coral:</span> #FE6E60;<br>
-    <span style="color: rgba(255,255,255,0.85);">--font-display:</span> "Nobel Uno", sans-serif;
+    <span style="color: rgba(255,255,255,0.85);">--font-display:</span> "Nobel Uno", serif;<br>
+    <span style="color: rgba(255,255,255,0.85);">--font-text:</span> &nbsp;&nbsp;"Plus Jakarta Sans", sans-serif;<br>
+    <span style="color: rgba(255,255,255,0.85);">--font-mono:</span> &nbsp;&nbsp;"JetBrains Mono", monospace;
   </div>
-    
+
   <div class="nk-footer">
     <a href="color.html">← Cores</a>
     <a href="applying.html">Aplicando a Marca →</a>

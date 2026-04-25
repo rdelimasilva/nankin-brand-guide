@@ -16,7 +16,9 @@
   .post .ttl { font-family: var(--font-display); font-size: 22px; line-height: 1.15; letter-spacing: -0.015em; }
   .post .ttl em { font-style: italic; }
   .post .lbl { font-size: 10px; letter-spacing: var(--tr-mega); text-transform: uppercase; font-weight: 600; }
-  .post .sig { font-family: var(--font-wordmark); font-size: 16px; }
+  .post .sig { display: inline-block; }
+  .post .sig img { height: 18px; display: block; }
+  .post--black .sig img, .post--coral .sig img { filter: brightness(0) invert(1); }
   .post--bege { background: var(--bg); color: var(--fg); }
   .post--black { background: var(--nk-black); color: #fff; } .post--black em { color: var(--nk-coral); }
   .post--coral { background: var(--nk-coral); color: #fff; } .post--coral em { color: #fff; text-decoration: underline; }
@@ -27,11 +29,11 @@
 <div class="nk-page">
   <h2 class="nk-h2">Cinco formatos</h2>
   <div style="display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-top: 14px;">
-    <div class="post post--bege"><div class="lbl">Pensamento</div><div class="ttl">Cobrança não é assunto chato. É o <em>combustível</em> do escritório.</div><div class="sig">nankin.</div></div>
-    <div class="post post--black"><div class="lbl" style="opacity: 0.6;">Métrica</div><div class="ttl"><em>3 horas</em><br>por semana,<br>de volta para<br>o projeto.</div><div class="sig" style="opacity: 0.7;">nankin.</div></div>
-    <div class="post post--coral"><div class="lbl" style="opacity: 0.85;">Lançamento</div><div class="ttl"><em>Cronograma</em> agora exporta para PDF.</div><div class="sig" style="opacity: 0.85;">nankin.</div></div>
-    <div class="post post--bege"><div class="lbl">Caso</div><div class="ttl">"Substituiu três planilhas."<div style="font-size: 11px; color: var(--fg-muted); margin-top: 16px; font-family: var(--font-sans); font-style: normal;">Camila Vianna · Estúdio Faber</div></div><div class="sig">nankin.</div></div>
-    <div class="post post--black"><div class="lbl" style="opacity: 0.6;">Convite</div><div class="ttl">14 dias.<br>Sem cartão.<br>Sem letra miúda.<div style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 18px; font-family: var(--font-sans); font-style: normal;">nankin.com.br</div></div><div class="sig" style="opacity: 0.7;">nankin.</div></div>
+    <div class="post post--bege"><div class="lbl">Pensamento</div><div class="ttl">Cobrança não é assunto chato. É o <em>combustível</em> do escritório.</div><div class="sig"><img src="../assets/logo-nankin-wordmark.svg" alt="nankin"></div></div>
+    <div class="post post--black"><div class="lbl" style="opacity: 0.6;">Métrica</div><div class="ttl"><em>3 horas</em><br>por semana,<br>de volta para<br>o projeto.</div><div class="sig" style="opacity: 0.7;"><img src="../assets/logo-nankin-wordmark.svg" alt="nankin"></div></div>
+    <div class="post post--coral"><div class="lbl" style="opacity: 0.85;">Lançamento</div><div class="ttl"><em>Cronograma</em> agora exporta para PDF.</div><div class="sig" style="opacity: 0.85;"><img src="../assets/logo-nankin-wordmark.svg" alt="nankin"></div></div>
+    <div class="post post--bege"><div class="lbl">Caso</div><div class="ttl">"Substituiu três planilhas."<div style="font-size: 11px; color: var(--fg-muted); margin-top: 16px; font-family: var(--font-sans); font-style: normal;">Camila Vianna · Estúdio Faber</div></div><div class="sig"><img src="../assets/logo-nankin-wordmark.svg" alt="nankin"></div></div>
+    <div class="post post--black"><div class="lbl" style="opacity: 0.6;">Convite</div><div class="ttl">14 dias.<br>Sem cartão.<br>Sem letra miúda.<div style="font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 18px; font-family: var(--font-sans); font-style: normal;">nankin.com.br</div></div><div class="sig" style="opacity: 0.7;"><img src="../assets/logo-nankin-wordmark.svg" alt="nankin"></div></div>
   </div>
 
   <h2 class="nk-h2">Princípios</h2>
