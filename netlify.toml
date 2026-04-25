@@ -1,7 +1,12 @@
 [build]
-  publish = "brand-guide"
+  publish = "."
 
 [[redirects]]
   from = "/"
-  to = "/index.html"
-  status = 200
+  to = "/brand-guide/"
+  status = 301
+
+[[redirects]]
+  from = "/index.html"
+  to = "/brand-guide/index.html"
+  status = 301
