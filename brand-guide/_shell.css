@@ -2,7 +2,7 @@
    Sidebar + main layout. Page content is the responsibility of each
    page; this file just owns the shell. */
 
-@import url('../colors_and_type.css');
+@import url('colors_and_type.css');
 
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; }
